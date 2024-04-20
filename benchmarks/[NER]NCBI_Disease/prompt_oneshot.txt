@@ -1,0 +1,11 @@
+TASK: the task is to extract disease entities in a sentence. 
+
+INPUT: the input is a sentence.
+
+OUTPUT: the output is an HTML that highlights all the disease entities in the sentence.
+
+Example-1 Sentence: A common MSH2 mutation in English and North American HNPCC families : origin , phenotypic expression , and sex specific differences in colorectal cancer .
+Example-1 HTML: A common MSH2 mutation in English and North American <span> HNPCC </span> families : origin , phenotypic expression , and sex specific differences in <span> colorectal cancer </span> .
+
+Input: {Input}
+Output:

@@ -1,0 +1,42 @@
+﻿***TASK***
+The task is to perform a semantic classification of the article according to the hallmarks of cancer based on its abstract.
+
+***INPUT***
+The input is an abstract text.
+
+***DOCUMENTATION***
+There are 10 cancer hallmarks you will need to decide whether the article is related to, including:
+activating invasion and metastasis
+sustaining proliferative signaling
+resisting cell death
+cellular energetics
+genomic instability and mutation
+evading growth suppressors
+inducing angiogenesis
+enabling replicative immortality
+avoiding immune destruction
+tumor promoting inflammation
+
+***OUTPUT***
+The output should be in a json format, with relevant value for each class.
+Put value 1 if the article is related to that class, 0 if the article is not related to that class. 
+Please note one article can be related to multiple classes.
+Example output:
+{
+  "activating invasion and metastasis": ,
+  "sustaining proliferative signaling": ,
+  "resisting cell death": ,
+  "cellular energetics": ,
+  "genomic instability and mutation": ,
+  "evading growth suppressors": ,
+  "inducing angiogenesis": ,
+  "enabling replicative immortality": ,
+  "avoiding immune destruction": ,
+  "tumor promoting inflammation": 
+}
+
+***EXAMPLES***
+
+Input: {Input}
+Output:
+

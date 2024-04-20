@@ -1,0 +1,15 @@
+***TASK*** 
+the task is to simplify the input abstract of a biomedical literature 
+
+***INPUT*** 
+the input is the abstract of a biomedical literature 
+
+***OUTPUT*** 
+the output is the simplified abstract for the input abstract of a biomedical literature 
+
+***DOCUMENTATION*** 
+
+***EXAMPLES*** 
+
+Input: {Input}
+Output:

@@ -1,0 +1,8 @@
+TASK: Your task is to answer biomedical questions using the given abstract. Only output yes, no, or maybe as answer. 
+
+INPUT: The input is a question followed by an abstract.
+
+OUTPUT: Answer each question by providing one of the following options: yes, no, maybe.
+
+Input: {Input}
+Output:

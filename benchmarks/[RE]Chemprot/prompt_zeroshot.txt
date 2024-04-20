@@ -1,0 +1,14 @@
+TASK: the task is to classify relations between a chemical and a gene for a sentence. 
+
+INPUT: the input is a sentence where the chemical is labeled as @CHEMICAL$ and the gene is labeled as @GENE$ accordingly in a sentence. 
+
+OUTPUT: your task is to select one out of the six types of relations ('CPR:3', 'CPR:4', 'CPR:5', 'CPR:6', 'CPR:9', and 'false') for the gene and chemical without any explanation or other characters:
+CPR:3, which includes UPREGULATOR, ACTIVATOR, and INDIRECT UPREGULATOR
+CPR:4, which includes DOWNREGULATOR, INHIBITOR ,and INDIRECT DOWNREGULATOR
+CPR:5, which includes AGONIST, AGONIST ACTIVATOR, and AGONIST INHIBITOR
+CPR:6, which includes ANTAGONIST
+CPR:9, which includes SUBSTRATE, PRODUCT OF and SUBSTRATE PRODUCT OF
+false, which indicates no relations
+
+Input: {Input}
+Output:

@@ -1,0 +1,15 @@
+***TASK*** 
+the task is to summarize an input biomedical literature in six sentences
+
+***INPUT*** 
+the input is a biomedical literature 
+
+***OUTPUT*** 
+the output is the summary of an input biomedical literature in six sentences
+
+***DOCUMENTATION*** 
+
+***EXAMPLES***
+
+Input: {Input}
+Output:
