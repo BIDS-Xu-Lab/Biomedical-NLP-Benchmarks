@@ -8,6 +8,21 @@ from . import vital_measure
 
 TASK_REGISTRY = {
     "MS2": vital_measure.MS2,
+    "MS21Shot": vital_measure.MS21Shot,
+    "LitCovid": vital_measure.LitCovid,
+    "LitCovid1Shot": vital_measure.LitCovid1Shot,
+    "HoC": vital_measure.HoC,
+    "HoC1Shot": vital_measure.HoC1Shot,
+    "MedQA": vital_measure.MedQA,
+    "MedQA1Shot": vital_measure.MedQA1Shot,
+    "PubmedQA": vital_measure.PubmedQA,
+    "PubmedQA1Shot": vital_measure.PubmedQA1Shot,
+    "PubmedSum": vital_measure.PubmedSum,
+    "PubmedSum1Shot": vital_measure.PubmedSum1Shot,
+    "CochranePLS": vital_measure.CochranePLS,
+    "CochranePLS1Shot": vital_measure.CochranePLS1Shot,
+    "PLOS": vital_measure.PLOS,
+    "PLOS1Shot": vital_measure.PLOS1Shot,
 }
 
 ALL_TASKS = sorted(list(TASK_REGISTRY))
