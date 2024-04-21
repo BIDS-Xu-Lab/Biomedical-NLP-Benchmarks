@@ -639,3 +639,63 @@ class NormQA(QA):
 
 class MS2(AbstractiveSummarization):
     DATASET_PATH = "clinicalnlplab/MS2_test"
+
+
+class MS21Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/MS2_1shot_test"
+
+
+class LitCovid(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/LitCovid_test"
+
+
+class LitCovid1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/LitCovid_1shot_test"
+
+
+class HoC(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/HoC_test"
+
+
+class HoC1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/HoC_1shot_test"
+
+
+class MedQA(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/medQA_test"
+
+
+class MedQA1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/medQA_1shot_test"
+
+
+class PubmedQA(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/pubmedqa_test"
+
+
+class PubmedQA1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/pubmedqa_1shot_test"
+
+
+class PubmedSum(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/PubMed_Summ_test"
+
+
+class PubmedSum1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/PubMed_Summ_1shot_test"
+
+
+class CochranePLS(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/CochranePLS_test"
+
+
+class CochranePLS1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/CochranePLS_1shot_test"
+
+
+class PLOS(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/PLOS_test"
+
+
+class PLOS1Shot(AbstractiveSummarization):
+    DATASET_PATH = "clinicalnlplab/PLOS_1shot_test"
