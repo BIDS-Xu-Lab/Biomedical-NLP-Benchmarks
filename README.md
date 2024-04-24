@@ -8,7 +8,7 @@ The datasets are biomedical natural language processing (BioNLP) benchmarks comm
 
 ## Running the prediction script for GPT models
 
-To generate predictions for 6 generative tasks ([QA]MedQA(5-option), [QA]PubMedQA, [Summarization]PubMed, [Summarization]MS^2, [Simplification]Cochrane, [Simplification]PLOS), please use the following command:
+To generate predictions for 6 generative tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:
 
 ```bash
 python generative_tasks/run_gpt.py \
@@ -27,7 +27,7 @@ and
 ```bash
 python extractive_tasks/run_convert_pred_2_json.py
 ```
-to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero / one shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
+to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero_shot / one_shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
 ## Running the prediction script for Llama models
 
