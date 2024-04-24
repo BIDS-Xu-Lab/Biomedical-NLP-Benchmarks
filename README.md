@@ -8,7 +8,7 @@ The datasets are biomedical natural language processing (BioNLP) benchmarks comm
 
 ## Running the prediction script for GPT models
 
-To generate predictions using the GPT API, please use the following command:
+To generate predictions for using the GPT API for 6 generative tasks ([QA]MedQA(5-option), [QA]PubMedQA, [Summarization]PubMed, [Summarization]MS^2, [Simplification]Cochrane, [Simplification]PLOS), please use the following command:
 
 ```bash
 python generative_tasks/run_gpt.py \
@@ -17,6 +17,8 @@ python generative_tasks/run_gpt.py \
  --setting {zero_shot | one_shot}
 ```
 Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_gpt-4-32k_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
+
+To generate predictions for using the GPT API for 6 extractive tasks ([NER]BC5CDR-chemical, [NER]NCBI Disease, [RE]ChemProt, [RE]DDI2013, [MLC]HoC,  [MLC]LitCovid), please use the following command:
 
 ## Running the prediction script for Llama models
 
