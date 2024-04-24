@@ -20,6 +20,15 @@ Predictions and corresponding gold labels are saved in JSON format, for example,
 
 To generate predictions for using the GPT API for 6 extractive tasks ([NER]BC5CDR-chemical, [NER]NCBI Disease, [RE]ChemProt, [RE]DDI2013, [MLC]HoC,  [MLC]LitCovid), please use the following command:
 
+```bash
+python extractive_tasks/run_gpt.py
+```
+and
+```bash
+python extractive_tasks/run_convert_pred_2_json.py
+```
+to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero / one shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
+
 ## Running the prediction script for Llama models
 
 Please adhere to the instructions in the `llama` folder. Note that the evaluation script within this folder serves merely as a reference. For consistent results across all models — including Llama models and GPT models — we used `run_eval.py` for evaluations.
