@@ -11,9 +11,9 @@ The datasets are biomedical natural language processing (BioNLP) benchmarks comm
 To generate predictions using the GPT API, please use the following command:
 
 ```bash
-python run_gpt.py \
- --dataset {pubmed | ms2 | cochrane | plos |...} \
- --model {gpt-35-turbo-16k | gpt-4-32k | ... } \
+python generative_tasks/run_gpt.py \
+ --dataset {pubmed | ms2 | cochrane | plos | pubmedqa | medqa5} \
+ --model {gpt-35-turbo-16k | gpt-4-32k } \
  --setting {zero_shot | one_shot}
 ```
 Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_gpt-4-32k_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
