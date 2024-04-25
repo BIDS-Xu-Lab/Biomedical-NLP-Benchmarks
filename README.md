@@ -6,6 +6,24 @@ The datasets are biomedical natural language processing (BioNLP) benchmarks comm
 - **The original full dataset:** For each `dataset_name`, the original complete training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory. These datasets have been prepared based on existing studies. The train and dev files were used to fine-tune models.
 - **Prompts**: For each `dataset_name`, zero-shot and one-shot prompts are located in the `benchmarks/{dataset_name}/` directory. We selected one fixed example from the train file for one-shot learning.
 
+## Fine-tuning for Llama models
+
+Please adhere to the instructions in the `LLMindCraft` submodule folder, which provides both the preprocessing scripts and fine-tuning docker images.
+
+We also provide the preprocessed datasets for fine-tuning:
+
+| Dataset                                           |
+|---------------------------------------------------|
+| clinicalnlplab/CochranePLS_train                  |
+| clinicalnlplab/HoC_train                          |
+| clinicalnlplab/LitCovid_train                     |
+| clinicalnlplab/MS2_train                          |
+| clinicalnlplab/MedQA_train                        |
+| clinicalnlplab/PLOS_train                         |
+| clinicalnlplab/PubmedQA_train                     |
+| clinicalnlplab/PubmedSumm_train                   |
+
+
 ## Running the prediction script for GPT models
 
 To generate predictions for 6 generative tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:

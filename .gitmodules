@@ -1,0 +1,3 @@
+[submodule "LLMindcraft"]
+	path = LLMindcraft
+	url = https://github.com/BIDS-Xu-Lab/LLMindcraft.git
