@@ -1,4 +1,4 @@
-from datasets import load_dataset
+from datasets import load_dataset, Features,Value
 import torch,os
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer, TrainingArguments, EarlyStoppingCallback
 from peft import AutoPeftModelForCausalLM, LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -14,6 +14,7 @@ import argparse
 
 disable_caching()
 
+
 parser = argparse.ArgumentParser(description='Process command-line arguments.')
 parser.add_argument('-d', '--dataset', type=str, required=True,
                     help='Dataset name')
@@ -24,13 +25,13 @@ args = parser.parse_args()
 
 dataset = args.dataset
 model_name = args.model_name
-output_dir = f"./models/{model_name.split('/')[-1]}"+'_'+dataset.split('/')[-1]
-os.environ["WANDB_PROJECT"] = model_name.split('/')[-1]+'_'+dataset.split('/')[-1]
+output_dir = f"./models/{model_name.split('/')[-1]}"+'_'+dataset
 
+context_feat = Features({'unprocessed': Value(dtype='string', id=None),'processed': Value(dtype='string', id=None)})
 
-#RE
-train_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_train.csv"], split="train")
-eval_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_dev.csv"], split="train")
+#NER
+train_dataset = load_dataset("csv", data_files=[f"../../benchmarks/{dataset}/datasets/instruction/sentence_level_train.csv"], split="train",features=context_feat)
+eval_dataset = load_dataset("csv", data_files=[f"../../benchmarks/{dataset}/datasets/instruction//sentence_level_dev.csv"], split="train",features=context_feat)
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -41,14 +42,13 @@ bnb_config = BitsAndBytesConfig(
 base_model = AutoModelForCausalLM.from_pretrained(model_name, 
                                                   torch_dtype=torch.bfloat16, 
                                                   quantization_config=bnb_config,
-                                                  device_map=device_map,
-                                                  cache_dir="/data/yhu5/huggingface_models/",
-                                                  token = token)
+                                                  device_map=device_map)
 
 
 base_model.config.use_cache = False
 base_model = prepare_model_for_kbit_training(base_model)
 
+tokenizer = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf', token=token, use_fast=True)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
@@ -76,8 +76,8 @@ print_trainable_parameters(base_model)
 
 def formatting_prompts_func(example):
     output_texts = []
-    for i in range(len(example['conversations'])):
-        text = f"{example['conversations'][i][0]['value']} {example['conversations'][i][1]['value']}"
+    for i in range(len(example['unprocessed'])):
+        text = f"{example['unprocessed'][i]} {example['processed'][i]}"
         output_texts.append(text)
     #print (output_texts)
     return output_texts

@@ -1,4 +1,4 @@
-from datasets import load_dataset
+from datasets import load_dataset, Features,Value
 import torch,os
 from transformers import AutoModelForCausalLM, BitsAndBytesConfig, AutoTokenizer, TrainingArguments, EarlyStoppingCallback
 from peft import AutoPeftModelForCausalLM, LoraConfig, get_peft_model, prepare_model_for_kbit_training
@@ -27,10 +27,11 @@ dataset = args.dataset
 model_name = args.model_name
 output_dir = f"./models/{model_name.split('/')[-1]}"+'_'+dataset
 
+context_feat = Features({'unprocessed': Value(dtype='string', id=None),'processed': Value(dtype='string', id=None)})
 
 #NER
-train_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_train.csv"], split="train")
-eval_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_dev.csv"], split="train")
+train_dataset = load_dataset("csv", data_files=[f"../../benchmarks/{dataset}/datasets/instruction/sentence_level_train.csv"], split="train",features=context_feat)
+eval_dataset = load_dataset("csv", data_files=[f"../../benchmarks/{dataset}/datasets/instruction//sentence_level_dev.csv"], split="train",features=context_feat)
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -41,9 +42,7 @@ bnb_config = BitsAndBytesConfig(
 base_model = AutoModelForCausalLM.from_pretrained(model_name, 
                                                   torch_dtype=torch.bfloat16, 
                                                   quantization_config=bnb_config,
-                                                  device_map=device_map,
-                                                  cache_dir="/data/yhu5/huggingface_models/",
-                                                  token = token)
+                                                  device_map=device_map)
 
 
 base_model.config.use_cache = False
