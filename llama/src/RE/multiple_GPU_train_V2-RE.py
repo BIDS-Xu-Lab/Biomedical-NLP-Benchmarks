@@ -14,12 +14,6 @@ import argparse
 
 disable_caching()
 
-token = ''
-
-#dataset = 'BC5CDR-disease'
-    #for model_name in ['meta-llama/Llama-2-13b-hf','meta-llama/Llama-2-7b-hf','chaoyi-wu/MedLLaMA_13B','epfl-llm/meditron-7b','epfl-llm/meditron-70b']:
-#model_name = 'chaoyi-wu/MedLLaMA_13B'
-
 parser = argparse.ArgumentParser(description='Process command-line arguments.')
 parser.add_argument('-d', '--dataset', type=str, required=True,
                     help='Dataset name')
@@ -35,8 +29,7 @@ os.environ["WANDB_PROJECT"] = model_name.split('/')[-1]+'_'+dataset.split('/')[-
 
 
 #RE
-train_dataset = load_dataset(f'{dataset}',cache_dir="/data/yhu5/huggingface_models/", split='train',token=token,use_auth_token=True)
-#eval_dataset = load_dataset("csv", data_files=["/data/yhu5/LLAMA2/data/CLAMP_data_reorg/RE_dev.csv"], split="train")
+train_dataset = load_dataset(f'{dataset}', split='train',use_auth_token=True)
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -55,10 +48,6 @@ base_model = AutoModelForCausalLM.from_pretrained(model_name,
 base_model.config.use_cache = False
 base_model = prepare_model_for_kbit_training(base_model)
 
-if 'MedLLaMA_13B' in args.model_name:
-  tokenizer = AutoTokenizer.from_pretrained('meta-llama/Llama-2-7b-hf', token=token, use_fast=True)
-else:
-  tokenizer = AutoTokenizer.from_pretrained(args.model_name, token=token, use_fast=True)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
