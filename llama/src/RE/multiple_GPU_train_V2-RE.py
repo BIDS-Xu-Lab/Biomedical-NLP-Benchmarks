@@ -29,7 +29,8 @@ os.environ["WANDB_PROJECT"] = model_name.split('/')[-1]+'_'+dataset.split('/')[-
 
 
 #RE
-train_dataset = load_dataset(f'{dataset}', split='train',use_auth_token=True)
+train_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_train.csv"], split="train")
+eval_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_dev.csv"], split="train")
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
@@ -100,9 +101,11 @@ training_args = TrainingArguments(
     weight_decay=0.00001,
     warmup_ratio=0.01,
     ddp_find_unused_parameters=False,
+    evaluation_strategy="epoch",
     #load_best_model_at_end=True,
     #metric_for_best_model='eval_loss'
 )
+
 
 trainer = SFTTrainer(
     base_model,
