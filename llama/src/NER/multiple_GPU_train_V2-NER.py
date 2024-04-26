@@ -16,10 +16,6 @@ disable_caching()
 
 token = ''
 
-#dataset = 'BC5CDR-disease'
-    #for model_name in ['meta-llama/Llama-2-13b-hf','meta-llama/Llama-2-7b-hf','chaoyi-wu/MedLLaMA_13B','epfl-llm/meditron-7b','epfl-llm/meditron-70b']:
-#model_name = 'chaoyi-wu/MedLLaMA_13B'
-
 parser = argparse.ArgumentParser(description='Process command-line arguments.')
 parser.add_argument('-d', '--dataset', type=str, required=True,
                     help='Dataset name')
@@ -37,10 +33,6 @@ os.environ["WANDB_PROJECT"] = model_name.split('/')[-1]+'_'+dataset
 #NER
 train_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_train.csv"], split="train")
 eval_dataset = load_dataset("csv", data_files=[f"./data/{dataset}/sentence_level_dev.csv"], split="train")
-
-#RE
-#train_dataset = load_dataset("csv", data_files=["/data/yhu5/LLAMA2/data/CLAMP_data_reorg/RE_train.csv"], split="train")
-#eval_dataset = load_dataset("csv", data_files=["/data/yhu5/LLAMA2/data/CLAMP_data_reorg/RE_dev.csv"], split="train")
 
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
