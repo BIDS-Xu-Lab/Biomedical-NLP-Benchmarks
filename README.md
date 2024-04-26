@@ -23,6 +23,15 @@ We also provide the preprocessed datasets for fine-tuning:
 | clinicalnlplab/PubmedQA_train                     |
 | clinicalnlplab/PubmedSumm_train                   |
 
+For NER and RE tasks, run:
+```bash
+./llama/scripts/run-NER.sh 
+```
+or
+```bash
+./llama/scripts/run-RE.sh 
+```
+The models arguement could be set to any huggingface-based LLaMA models.
 
 ## Running the prediction script for GPT models
 
