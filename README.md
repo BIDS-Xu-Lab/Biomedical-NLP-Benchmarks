@@ -8,7 +8,7 @@ The datasets are biomedical natural language processing (BioNLP) benchmarks comm
 
 ## Fine-tuning for Llama models
 
-Please adhere to the instructions in the `LLMindCraft` submodule folder, which provides both the preprocessing scripts and fine-tuning docker images.
+Please adhere to the instructions in the `LLMindCraft` submodule folder, which provides both the preprocessing scripts and fine-tuning docker images. All 24 fine-tuned models (Llama-2-13b / PMC-LLaMA-13b for 12 datasets) are posted here: [fine-tuned models](https://huggingface.co/clinicalnlplab).
 
 We also provide the preprocessed datasets for fine-tuning:
 
