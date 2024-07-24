@@ -36,7 +36,7 @@ We also provide the preprocessed datasets for instruction fine-tuning via [here]
 | [MLC]LitCovid            | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/LitCovid_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/LitCovid_test)|
 | [QA]MedQA(5-option)      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/medQA_test)|
 | [QA]PubMedQA             | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PubmedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/pubmedqa_test)|
-| [Summarization]PubMed    | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PubmedSumm_train}||[Test]|
+| [Summarization]PubMed    | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PubmedSumm_train)||[Test]|
 | [Summarization]MS^2      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MS2_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/MS2_test)|
 | [Simplification]Cochrane | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/CochranePLS_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/CochranePLS_test)|
 | [Simplification]PLOS     | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PLOS_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/PLOS_test)|
