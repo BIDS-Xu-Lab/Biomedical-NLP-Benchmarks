@@ -6,7 +6,7 @@ This is the github repository for ["A systematic evaluation of large language mo
 ## 1. Benchmarks and models
 This study consists of 12 benchmarks from six biomedical natural language processing applications: named entity recognition, relation extraction, multi-label document classification, question answering, text summarization, and text simplification.
 
-The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). 
+The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks), explained below. 
 
 ### 1.1 Original datasets
 Each has a **full_set** folder consisting the original
@@ -147,6 +147,8 @@ python run_eval.py \
 |                          | Macro-average   | 0.6536  | 0.3814  | 0.4561 | 0.2362  | 0.3848  | 0.4750  |0.2614 | 0.4052 | **0.4862** | 0.2866 | **0.5131** | 0.4422 |
 
 
-## Original repository
+## 5. Additional results
+Additional results are under [Supplementary_Materials](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/supplementary_materials).
 
-https://github.com/qingyu-qc/gpt_bionlp_benchmark
+## 6. Citation
+Chen, Q., Du, J., Hu, Y., Keloth, V.K., Peng, X., Raja, K., Zhang, R., Lu, Z. and Xu, H., 2023. Large language models in biomedical natural language processing: benchmarks, baselines, and recommendations. arXiv preprint arXiv:2305.16326.
