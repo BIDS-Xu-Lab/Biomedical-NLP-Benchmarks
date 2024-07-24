@@ -95,7 +95,7 @@ Please adhere to the instructions in the `llama` folder. Note that the evaluatio
 
 Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_llama2_13b_chat_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
-### 3. Instruction fine-tuning Llama models
+## 3. Instruction fine-tuning Llama models
 
 The instruction fine-tuning codes are under [the llmindcarft folder](https://github.com/BIDS-Xu-Lab/LLMindcraft/tree/ba60e8f862024067dcc78311dfcab144ef648bf2).
 
@@ -113,7 +113,9 @@ The models arguement could be set to any huggingface-based LLaMA models.
 
 
 
-## Evaluation
+## 4. Evaluation
+
+Please use [run_eval.py] (https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/blob/main/run_eval.py) for evaluation.
 
 Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) (for BART metrics evaluation).
 
@@ -126,7 +128,7 @@ python run_eval.py \
 ```
 
 
-## Results
+## 5. Results
 
 |             | Main metrics |SOTA results before LLMs | GPT-3.5 0s | GPT-4 0s  | LLAMA2 13B 0s | GPT-3.5 1s | GPT-4 1s  | LLAMA2 13B 1s | GPT-3.5 5s | GPT-4 5s  | LLAMA2 13B 5s | LLAMA2 13B fine-tuned | PMC LLAMA 13B fine-tuned |
 |-------------|-----|---------------------|---------|---------|------------|---------|---------|------------|------------|---------------|------------|------------|---------------|
