@@ -1,9 +1,16 @@
-# Biomedical Natural Language Processing Benchmarks
+# Large language models for biomedical natural language processing: benchmarks, baselines, and recommendations
+
+This is the github repository for ["A systematic evaluation of large language models for biomedical natural language processing: benchmarks, baselines, and recommendations"](https://arxiv.org/pdf/2305.16326). The related data and codes are publicly available, described below.
 
 
 ## Benchmarks
-The datasets are biomedical natural language processing (BioNLP) benchmarks commonly adopted for benchmarking BioNLP lanuage models. It consists of the following:
-- **The original full dataset:** For each `dataset_name`, the original complete training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory. These datasets have been prepared based on existing studies. The train and dev files were used to fine-tune models.
+This study consists of 12 benchmarks from six biomedical natural language processing applications: named entity recognition, relation extraction, multi-label document classification, question answering, text summarization, and text simplification.
+
+The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). Each has a **full_set** folder consisting
+training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory from the existing studies. The test files contain the full testing set for evaluation. The train and dev files were used to fine-tune models.
+
+
+
 - **Prompts**: For each `dataset_name`, zero-shot and one-shot prompts are located in the `benchmarks/{dataset_name}/` directory. We selected one fixed example from the train file for one-shot learning.
 
 ## Fine-tuning for Llama models
