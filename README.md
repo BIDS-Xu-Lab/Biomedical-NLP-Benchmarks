@@ -27,13 +27,46 @@ Output:
 ```
 The `example input and output` are from an instance from the training set. `{Input}` is an instance from the testing set for inference.
 
+### 1.3 Preprocessed dataset for instruction fine-tuning
+We also provide the preprocessed datasets for instruction fine-tuning via [here](https://huggingface.co/collections/clinicalnlplab/instruction-datasets-for-benchmark-66a1234b13bb4260ed8f278a).
+
+ 
+| [MLC]HoC                 | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/HoC_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/HoC_test)|
+| [MLC]LitCovid            | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/LitCovid_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/LitCovid_test)|
+| [QA]MedQA(5-option)      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/medQA_test)|
+| [QA]PubMedQA             | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PubmedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/pubmedqa_test)|
+| [Summarization]PubMed    | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PubmedSumm_train}||[Test]|
+| [Summarization]MS^2      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MS2_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/MS2_test)|
+| [Simplification]Cochrane | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/CochranePLS_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/CochranePLS_test)|
+| [Simplification]PLOS     | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PLOS_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/PLOS_test)|
 
 
-**1.3 Preprocessed dataset for instruction fine-tuning**
+## 2. Inference
+
+### 2.1 Inference for GPT models
+
+To generate predictions for 6 generative tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:
+
+```bash
+python generative_tasks/run_gpt.py \
+ --dataset {medqa5 | pubmedqa | pubmed | ms2 | cochrane | plos} \
+ --model {gpt-35-turbo-16k | gpt-4-32k } \
+ --setting {zero_shot | one_shot}
+```
+Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_gpt-4-32k_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
+
+To generate predictions for 6 extractive tasks (**[NER]BC5CDR-chemical**, **[NER]NCBI Disease**, **[RE]ChemProt**, **[RE]DDI2013**, **[MLC]HoC**,  **[MLC]LitCovid**), please use the following command:
+
+```bash
+python extractive_tasks/run_gpt.py
+```
+and
+```bash
+python extractive_tasks/run_convert_pred_2_json.py
+```
+to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero_shot / one_shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
 
-
-- **Prompts**: For each `dataset_name`, zero-shot and one-shot prompts are located in the `benchmarks/{dataset_name}/` directory. We selected one fixed example from the train file for one-shot learning.
 
 ## Fine-tuning for Llama models
 
