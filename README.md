@@ -6,8 +6,30 @@ This is the github repository for ["A systematic evaluation of large language mo
 ## Benchmarks
 This study consists of 12 benchmarks from six biomedical natural language processing applications: named entity recognition, relation extraction, multi-label document classification, question answering, text summarization, and text simplification.
 
-The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). Each has a **full_set** folder consisting
-training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory from the existing studies. The test files contain the full testing set for evaluation. The train and dev files were used to fine-tune models.
+The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). 
+
+**Original datasets**
+Each has a **full_set** folder consisting the original
+training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory from the existing studies. 
+
+**Prompts for zero- and few-shot**
+We also made the prompts used in the study publicly available. For each `dataset_name`, zero- and few-shot prompts are also provided in the `benchmarks/{dataset_name}/` directory. For instance, [one-shot for pubmedqa](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/edit/main/benchmarks/%5BQA%5DPubMedQA/prompt_oneshot.txt) has the following information:
+
+``` 
+TASK: Your task is to answer biomedical questions using the given abstract. Only output yes, no, or maybe as answer. 
+INPUT: The input is a question followed by an abstract.
+OUTPUT: Answer each question by providing one of the following options: yes, no, maybe.
+Example
+INPUT: Does hippocampal atrophy on MRI predict cognitive decline? ["To investigate whether the presence of hippocampal atrophy (HCA) on MRI in Alzheimer's disease (AD) leads to a more rapid decline in cognitive function. To investigate whether cognitively unimpaired controls and depressed subjects with HCA are at higher risk than those without HCA of developing dementia.", 'A prospective follow-up of subjects from a previously reported MRI study.', 'Melbourne, Australia.', 'Five controls with HCA and five age-matched controls without HCA, seven depressed subjects with HCA and seven without HCA, and 12 subjects with clinically diagnosed probable AD with HCA and 12 without HCA were studied. They were followed up at approximately 2 years with repeat cognitive testing, blind to initial diagnosis and MRI result.', 'HCA was rated by two radiologists blind to cognitive test score results. Cognitive assessment was by the Cambridge Cognitive Examination (CAMCOG).', 'No significant differences in rate of cognitive decline, mortality or progression to dementia were found between subjects with or without HCA.']
+OUTPUT: no
+Input: {Input}
+Output:
+```
+The example input and output are from an instance from the original training set. {Input} is an instance from the original testing set for inference.
+
+
+
+**Preprocessed dataset for instruction fine-tuning**
 
 
 
