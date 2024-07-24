@@ -1,0 +1,40 @@
+TASK: the task is to classify relations between two drugs for a sentence. 
+
+INPUT: the input is a sentence where the drugs are labeled as @DRUG$. 
+
+OUTPUT: your task is to select one out of the five types of relations ('DDI-effect', 'DDI-mechanism', 'DDI-advise', 'DDI-false', and 'DDI-int') for the drugs without any explanation or other characters:
+
+DDI-mechanism: This type is used to annotate DDIs that are described by their PK mechanism (e.g. Grepafloxacin may inhibit the metabolism of theobromine)
+
+DDI-effect: This type is used to annotate DDIs describing an effect (e.g. In uninfected volunteers, 46% developed rash while receiving SUSTIVA and clarithromycin) or a PD mechanism (e.g. Chlorthalidone may potentiate the action of other antihypertensive drugs)
+
+DDI-advise: This type is used when a recommendation or advice regarding a drug interaction is given (e.g. UROXATRAL should not be used in combination with other alpha-blockers)
+
+DDI-int: This type is used when a DDI appears in the text without providing any additional information (e.g. The interaction of omeprazole and ketoconazole has been established)
+
+DDI-false, This type is used when no DDI relation appears
+
+The following examples are provided:
+
+Example-1 Q: @DRUG$: Plasma concentrations of @DRUG$ decreased approximately 25% when colestipol and atorvastatin were coadministered.
+
+A: DDI-false
+
+Example-2 Q: @DRUG$: @DRUG$, given concomitantly with enoxacin or 60 minutes following enoxacin administration, decreased enoxacin bioavailability by approximately 25%.
+
+A: DDI-false
+
+Example-3 Q: Administration of @DRUG$ concomitantly with @DRUG$ in five normal volunteers resulted in increased propranolol levels in all subjects and bioavailability of propranolol was increased approximately 50%.
+
+A: DDI-mechanism
+
+Example-4 Q: @DRUG$: In normal volunteers, concomitant administration of @DRUG$ and acetaminophen resulted in an approximate 50% increase in plasma levels of acetaminophen.
+
+A: DDI-false
+
+Example-5 Q: @DRUG$: Plasma concentrations of atorvastatin decreased approximately 25% when colestipol and @DRUG$ were coadministered.
+
+A: DDI-false
+
+Q: {Input}
+A: 
