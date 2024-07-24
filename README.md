@@ -3,7 +3,7 @@
 This is the github repository for ["A systematic evaluation of large language models for biomedical natural language processing: benchmarks, baselines, and recommendations"](https://arxiv.org/pdf/2305.16326). The related data and codes are publicly available, described below.
 
 
-## 1. Benchmarks
+## 1. Benchmarks and models
 This study consists of 12 benchmarks from six biomedical natural language processing applications: named entity recognition, relation extraction, multi-label document classification, question answering, text summarization, and text simplification.
 
 The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). 
@@ -42,11 +42,31 @@ We also provide the preprocessed datasets for instruction fine-tuning via [here]
 | [Simplification]PLOS     | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/PLOS_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/PLOS_test)|
 
 
+## Instruction fine-tuned models
+We also made the instruction fine-tuned models in the study publicly available via [here] (https://huggingface.co/collections/clinicalnlplab/fine-tuned-models-for-benchmark-662948bb459e07dc7cef959a).
+
+
+|-------------|-----|-----|
+| [NER]BC5CDR-chemical     | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-BC5CDR-chemical)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-BC5CDR-chemical)|
+| [NER]NCBI Disease        | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-NCBI-disease)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-NCBI-disease)|
+| [RE]ChemProt             | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-chemprot)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-chemprot)|
+| [RE]DDI2013              | [LLAMA 2 13B] (https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-DDI2013_train) | [PMC-LLAMA 13B] (https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-DDI2013_train)|
+| [MLC]HoC                 | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-HoC)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-HoC)|
+| [MLC]LitCovid            | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-LitCovid)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13b-LitCovid)|
+| [QA]MedQA(5-option)      | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-MedQA)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-MedQA)|
+| [QA]PubMedQA             | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-PubmedQA)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-PubmedQA)|
+| [Summarization]PubMed    | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-LLaMA-2-13b-hf-PubmedSumm)||[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-PubmedSumm)|
+| [Summarization]MS^2      | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-MS2)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-MS2)|
+| [Simplification]Cochrane | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-CochranePLS)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-CochranePLS)|
+| [Simplification]PLOS     | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-PLOS)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-PLOS)|
+
 ## 2. Inference
 
 ### 2.1 Inference for GPT models
 
-To generate predictions for 6 generative tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:
+The inference codes for GPT models are under [the GPT folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/GPT)
+
+To generate predictions for the generative/reasoning tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:
 
 ```bash
 python generative_tasks/run_gpt.py \
@@ -56,7 +76,7 @@ python generative_tasks/run_gpt.py \
 ```
 Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_gpt-4-32k_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
-To generate predictions for 6 extractive tasks (**[NER]BC5CDR-chemical**, **[NER]NCBI Disease**, **[RE]ChemProt**, **[RE]DDI2013**, **[MLC]HoC**,  **[MLC]LitCovid**), please use the following command:
+To generate predictions for the extractive/classification tasks (**[NER]BC5CDR-chemical**, **[NER]NCBI Disease**, **[RE]ChemProt**, **[RE]DDI2013**, **[MLC]HoC**,  **[MLC]LitCovid**), please use the following command:
 
 ```bash
 python extractive_tasks/run_gpt.py
@@ -67,24 +87,19 @@ python extractive_tasks/run_convert_pred_2_json.py
 ```
 to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero_shot / one_shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
+## 2.2 Inference for Llama models
 
+The inference codes for GPT models are under [the llama folder]([https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/GPT](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/llama))
 
-## Fine-tuning for Llama models
+Please adhere to the instructions in the `llama` folder. Note that the evaluation script within this folder serves merely as a reference. For consistent results across all models — including Llama models and GPT models — we used `run_eval.py` for evaluations.
 
-Please adhere to the instructions in the `LLMindCraft` submodule folder, which provides both the preprocessing scripts and fine-tuning docker images. All 24 fine-tuned models (Llama-2-13b / PMC-LLaMA-13b for 12 datasets) are posted here: [fine-tuned models](https://huggingface.co/clinicalnlplab).
+Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_llama2_13b_chat_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
-We also provide the preprocessed datasets for fine-tuning:
+### 3. Instruction fine-tuning Llama models
 
-| Dataset                                           |
-|---------------------------------------------------|
-| clinicalnlplab/CochranePLS_train                  |
-| clinicalnlplab/HoC_train                          |
-| clinicalnlplab/LitCovid_train                     |
-| clinicalnlplab/MS2_train                          |
-| clinicalnlplab/MedQA_train                        |
-| clinicalnlplab/PLOS_train                         |
-| clinicalnlplab/PubmedQA_train                     |
-| clinicalnlplab/PubmedSumm_train                   |
+The instruction fine-tuning codes are under [the llmindcarft folder](https://github.com/BIDS-Xu-Lab/LLMindcraft/tree/ba60e8f862024067dcc78311dfcab144ef648bf2).
+
+Please adhere to the instructions in the folder, which provides both the preprocessing scripts and fine-tuning docker images. 
 
 For NER and RE tasks, run:
 ```bash
@@ -96,34 +111,7 @@ or
 ```
 The models arguement could be set to any huggingface-based LLaMA models.
 
-## Running the prediction script for GPT models
 
-To generate predictions for 6 generative tasks (**[QA]MedQA(5-option)**, **[QA]PubMedQA**, **[Summarization]PubMed**, **[Summarization]MS^2**, **[Simplification]Cochrane**, **[Simplification]PLOS**), please use the following command:
-
-```bash
-python generative_tasks/run_gpt.py \
- --dataset {medqa5 | pubmedqa | pubmed | ms2 | cochrane | plos} \
- --model {gpt-35-turbo-16k | gpt-4-32k } \
- --setting {zero_shot | one_shot}
-```
-Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_gpt-4-32k_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
-
-To generate predictions for 6 extractive tasks (**[NER]BC5CDR-chemical**, **[NER]NCBI Disease**, **[RE]ChemProt**, **[RE]DDI2013**, **[MLC]HoC**,  **[MLC]LitCovid**), please use the following command:
-
-```bash
-python extractive_tasks/run_gpt.py
-```
-and
-```bash
-python extractive_tasks/run_convert_pred_2_json.py
-```
-to generate all predictions (6 extractive tasks for GPT-3.5 / 4, zero_shot / one_shot) all together. Predictions and corresponding gold labels are saved in JSON format, for example, `Hoc_gpt4_os.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
-
-## Running the prediction script for Llama models
-
-Please adhere to the instructions in the `llama` folder. Note that the evaluation script within this folder serves merely as a reference. For consistent results across all models — including Llama models and GPT models — we used `run_eval.py` for evaluations.
-
-Predictions and corresponding gold labels are saved in JSON format, for example, `ms2_llama2_13b_chat_one_shot.json`. The JSON files include both the predicted outputs and the gold standard labels for all examples within this dataset.
 
 ## Evaluation
 
