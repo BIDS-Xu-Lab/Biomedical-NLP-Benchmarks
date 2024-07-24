@@ -8,11 +8,11 @@ This study consists of 12 benchmarks from six biomedical natural language proces
 
 The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). 
 
-**1.1 Original datasets**
+### 1.1 Original datasets
 Each has a **full_set** folder consisting the original
 training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory from the existing studies. 
 
-**1.2 Prompts for zero- and few-shot**
+### 1.2 Prompts for zero- and few-shot
 We also made the prompts used in the study publicly available. For each `dataset_name`, zero- and few-shot prompts are also provided in the `benchmarks/{dataset_name}/` directory. For instance, [one-shot for pubmedqa](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/edit/main/benchmarks/%5BQA%5DPubMedQA/prompt_oneshot.txt) has the following information:
 
 ``` 
