@@ -1,6 +1,6 @@
 # Large language models for biomedical natural language processing: benchmarks, baselines, and recommendations
 
-This is the github repository for ["A systematic evaluation of large language models for biomedical natural language processing: benchmarks, baselines, and recommendations"](https://arxiv.org/pdf/2305.16326). The related data and codes are publicly available, described below.
+This is the github repository for the manuscript ["A systematic evaluation of large language models for biomedical natural language processing: benchmarks, baselines, and recommendations"](https://arxiv.org/pdf/2305.16326). The related data, models, and codes are publicly available, described below.
 
 
 ## 1. Benchmarks and models
