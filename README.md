@@ -50,7 +50,7 @@ We also made the instruction fine-tuned models in the study publicly available v
 | [NER]BC5CDR-chemical     | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-BC5CDR-chemical)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-BC5CDR-chemical)|
 | [NER]NCBI Disease        | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-NCBI-disease)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-NCBI-disease)|
 | [RE]ChemProt             | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-chemprot)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-chemprot)|
-| [RE]DDI2013              | [LLAMA 2 13B] (https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-DDI2013_train) | [PMC-LLAMA 13B] (https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-DDI2013_train)|
+| [RE]DDI2013              | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-DDI2013_train) | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-DDI2013_train)|
 | [MLC]HoC                 | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-HoC)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-HoC)|
 | [MLC]LitCovid            | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-LitCovid)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13b-LitCovid)|
 | [QA]MedQA(5-option)      | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-MedQA)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-MedQA)|
