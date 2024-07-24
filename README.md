@@ -32,7 +32,7 @@ We also provide the preprocessed datasets for instruction fine-tuning via [here]
 
 | Dataset|Train/Dev|Test|
 |-------------|-----|-----|
-| [NER]BC5CDR-chemical     | [Train](https://huggingface.co/datasets/clinicalnlplab/BC5CDR_chemical_train)|[Dev](https://huggingface.co/datasets/clinicalnlplab/BC5CDR_chemical_dev)|[Test](https://huggingface.co/datasets/clinicalnlplab/BC5CDR_chemical_test)
+| [NER]BC5CDR-chemical     | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/BC5CDR_chemical_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/BC5CDR_chemical_test)
 | [MLC]HoC                 | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/HoC_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/HoC_test)|
 | [MLC]LitCovid            | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/LitCovid_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/LitCovid_test)|
 | [QA]MedQA(5-option)      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/medQA_test)|
