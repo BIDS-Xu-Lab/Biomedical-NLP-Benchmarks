@@ -1,0 +1,31 @@
+TASK: the task is to extract chemical entities in a sentence.
+
+INPUT: the input is a sentence.
+
+OUTPUT: the output is an HTML that highlights all the chemical entities with <span> ... </span> in the sentence.
+
+The following example format is provided:
+
+Example-1 Sentence: Iatrogenically induced intractable atrioventricular reentrant tachycardia after verapamil and catheter ablation in a patient with Wolff - Parkinson - White syndrome and idiopathic dilated cardiomyopathy .
+
+HTML: Iatrogenically induced intractable atrioventricular reentrant tachycardia after <span> verapamil </span> <span> and catheter ablation in a patient with Wolff - Parkinson - White syndrome and idiopathic dilated cardiomyopathy .
+
+Example-2 Sentence: Variant ventricular tachycardia in desipramine toxicity .
+
+HTML: Variant ventricular tachycardia in <span> desipramine </span> <span> toxicity .
+
+Example-3 Sentence: We report a case of variant ventricular tachycardia induced by desipramine toxicity .
+
+HTML: We report a case of variant ventricular tachycardia induced by <span> desipramine </span> <span> toxicity .
+
+Example-4 Sentence: Procainamide - induced polymorphous ventricular tachycardia .
+
+HTML: <span> Procainamide </span> <span> - induced polymorphous ventricular tachycardia .
+
+Example-5 Sentence: In a patient with WPW syndrome and idiopathic dilated cardiomyopathy , intractable atrioventricular reentrant tachycardia ( AVRT ) was iatrogenically induced .
+
+HTML: In a patient with WPW syndrome and idiopathic dilated cardiomyopathy , intractable atrioventricular reentrant tachycardia ( AVRT ) was iatrogenically induced .
+
+Sentence: {Input}
+
+HTML: 
