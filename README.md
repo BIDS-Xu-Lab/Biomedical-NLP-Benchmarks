@@ -3,16 +3,16 @@
 This is the github repository for ["A systematic evaluation of large language models for biomedical natural language processing: benchmarks, baselines, and recommendations"](https://arxiv.org/pdf/2305.16326). The related data and codes are publicly available, described below.
 
 
-## Benchmarks
+## 1. Benchmarks
 This study consists of 12 benchmarks from six biomedical natural language processing applications: named entity recognition, relation extraction, multi-label document classification, question answering, text summarization, and text simplification.
 
 The benchmarks are under [benchmarks folder](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/benchmarks). 
 
-**Original datasets**
+**1.1 Original datasets**
 Each has a **full_set** folder consisting the original
 training (train), development (dev), and testing (test) datasets are located in the `benchmarks/{dataset_name}/datasets/full_set/` directory from the existing studies. 
 
-**Prompts for zero- and few-shot**
+**1.2 Prompts for zero- and few-shot**
 We also made the prompts used in the study publicly available. For each `dataset_name`, zero- and few-shot prompts are also provided in the `benchmarks/{dataset_name}/` directory. For instance, [one-shot for pubmedqa](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/edit/main/benchmarks/%5BQA%5DPubMedQA/prompt_oneshot.txt) has the following information:
 
 ``` 
@@ -29,7 +29,7 @@ The `example input and output` are from an instance from the training set. `{Inp
 
 
 
-**Preprocessed dataset for instruction fine-tuning**
+**1.3 Preprocessed dataset for instruction fine-tuning**
 
 
 
