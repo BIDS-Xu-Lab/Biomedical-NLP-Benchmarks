@@ -44,7 +44,7 @@ We also provide the preprocessed datasets for instruction fine-tuning via [here]
 
 
 ## Instruction fine-tuned models
-We also made the instruction fine-tuned models in the study publicly available via [here] (https://huggingface.co/collections/clinicalnlplab/fine-tuned-models-for-benchmark-662948bb459e07dc7cef959a).
+We also made the instruction fine-tuned models in the study publicly available via [here](https://huggingface.co/collections/clinicalnlplab/fine-tuned-models-for-benchmark-662948bb459e07dc7cef959a).
 
 | Dataset|LLAMA|PMC-LLAMA|
 |-------------|-----|-----|
