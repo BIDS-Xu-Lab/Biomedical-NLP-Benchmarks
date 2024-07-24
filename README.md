@@ -25,7 +25,7 @@ OUTPUT: no
 Input: {Input}
 Output:
 ```
-The example input and output are from an instance from the original training set. {Input} is an instance from the original testing set for inference.
+The `example input and output` are from an instance from the training set. `{Input}` is an instance from the testing set for inference.
 
 
 
