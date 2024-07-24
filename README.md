@@ -45,7 +45,7 @@ We also provide the preprocessed datasets for instruction fine-tuning via [here]
 ## Instruction fine-tuned models
 We also made the instruction fine-tuned models in the study publicly available via [here] (https://huggingface.co/collections/clinicalnlplab/fine-tuned-models-for-benchmark-662948bb459e07dc7cef959a).
 
-
+| Dataset|LLAMA|PMC-LLAMA|
 |-------------|-----|-----|
 | [NER]BC5CDR-chemical     | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-BC5CDR-chemical)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-BC5CDR-chemical)|
 | [NER]NCBI Disease        | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-NCBI-disease)  | [PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-NCBI-disease)|
