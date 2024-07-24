@@ -1,0 +1,97 @@
+***TASK***
+
+The task is to decide relevant COVID-19 topics of the article based on its abstract.
+
+***INPUT***
+
+The input is an abstract text.
+
+***DOCUMENTATION***
+
+There are 7 topics you will need to decide whether the article is related to. The followings are the topics and their definitions.
+
+Mechanism: underlying cause(s) of COVID-19 infections and transmission and possible drug mechanism of action. 
+
+Transmission: characteristics and modes of COVID-19 transmissions. 
+
+Diagnosis: COVID-19 assessment through symptoms, test results and radiological features for COVID-19. 
+
+Treatment: treatment strategies, therapeutic procedures and vaccine development for COVID-19. 
+
+Prevention: prevention, control, mitigation and management strategies for COVID-19. 
+
+Case Report: descriptions of specific patient cases related to COVID-19. 
+
+Epidemic Forecasting: estimation on the trend of COVID-19 spread and related modeling approach. 
+
+***OUTPUT***
+
+The output should be in a json format, with relevant value for each topic: Treatment, Diagnosis, Prevention, Mechanism, Transmission, Epidemic Forecasting, Case Report.
+
+Put value 1 if the article is related to that topic, 0 if the article is not related to that topic. 
+
+Please note one article can be related to multiple topics.
+
+Example output format:
+
+{
+
+  "Treatment": ,
+
+  "Diagnosis": ,
+
+  "Prevention": ,
+
+  "Mechanism": ,
+
+  "Transmission": ,
+
+  "Epidemic Forecasting": ,
+
+  "Case Report": 
+
+}
+
+***EXAMPLE-1***
+
+INPUT: Use of hydroxychloroquine in hospitalised COVID-19 patients is associated with reduced mortality: Findings from the observational multicentre Italian CORIST study. BACKGROUND: Hydroxychloroquine (HCQ) was proposed as potential treatment for COVID-19. OBJECTIVE: We set-up a multicenter Italian collaboration to investigate the relationship between HCQ therapy and COVID-19 in-hospital mortality. METHODS: In a retrospective observational study, 3,451 unselected patients hospitalized in 33 clinical centers in Italy, from February 19, 2020 to May 23, 2020, with laboratory-confirmed SARS-CoV-2 infection, were analyzed. The primary end-point in a time-to event analysis was in-hospital death, comparing patients who received HCQ with patients who did not. We used multivariable Cox proportional-hazards regression models with inverse probability for treatment weighting by propensity scores, with the addition of subgroup analyses. RESULTS: Out of 3,451 COVID-19 patients, 76.3% received HCQ. Death rates (per 1,000 person-days) for patients receiving or not HCQ were 8.9 and 15.7, respectively. After adjustment for propensity scores, we found 30% lower risk of death in patients receiving HCQ (HR=0.70; 95%CI: 0.59 to 0.84; E-value=1.67). Secondary analyses yielded similar results. The inverse association of HCQ with inpatient mortality was particularly evident in patients having elevated C-reactive protein at entry. CONCLUSIONS: HCQ use was associated with a 30% lower risk of death in COVID-19 hospitalized patients. Within the limits of an observational study and awaiting results from randomized controlled trials, these data do not discourage the use of HCQ in inpatients with COVID-19.
+
+OUTPUT: 
+
+{'Treatment': 1, 'Diagnosis': 0, 'Prevention': 0, 'Mechanism': 0, 'Transmission': 0, 'Epidemic Forecasting': 0, 'Case Report': 0}
+
+***EXAMPLE-2***
+
+INPUT: The association of treatment with hydroxychloroquine and hospital mortality in COVID-19 patients. This study investigates the association between the treatment with hydroxychloroquine and mortality in patients admitted with COVID-19. Routinely recorded, clinical data, up to the 24th of April 2020, from the 2075 patients with COVID-19, admitted in 17 hospitals in Spain between the 1st of March and the 20th of April 2020 were used. The following variables were extracted for this study: age, gender, temperature, and saturation of oxygen on admission, treatment with hydroxychloroquine, azithromycin, heparin, steroids, tocilizumab, a combination of lopinavir with ritonavir, and oseltamivir, together with data on mortality. Multivariable logistic regression models were used to investigate the associations. At the time of collecting the data, 301 patients had died, 1449 had been discharged home from the hospitals, 240 were still admitted, and 85 had been transferred to hospitals not included in the study. Median follow-up time was 8 (IQR 5-12) days. Hydroxychloroquine had been used in 1857 patients. Hydroxychloroquine was associated with lower mortality when the model was adjusted for age and gender, with OR (95% CI): 0.44 (0.29-0.67). This association remained significant when saturation of oxygen < 90% and temperature > 37 degrees C were added to de model with OR 0.45 (0.30-0.68) p < 0.001, and also when all the other drugs, and time of admission, were included as covariates. The association between hydroxychloroquine and lower mortality observed in this study can be acknowledged by clinicians in hospitals and in the community. Randomized-controlled trials to assess the causal effects of hydroxychloroquine in different therapeutic regimes are required.
+
+OUTPUT: 
+
+{'Treatment': 1, 'Diagnosis': 0, 'Prevention': 0, 'Mechanism': 0, 'Transmission': 0, 'Epidemic Forecasting': 0, 'Case Report': 0}
+
+***EXAMPLE-3***
+
+INPUT: Chloroquine and Hydroxychloroquine for the Treatment of COVID-19: a Systematic Review and Meta-analysis. BACKGROUND: There is no effective therapy for COVID-19. Hydroxychloroquine (HCQ) and chloroquine (CQ) have been used for its treatment but their safety and efficacy remain uncertain. OBJECTIVE: We performed a systematic review to synthesize the available data on the efficacy and safety of CQ and HCQ for the treatment of COVID-19. METHODS: Two reviewers searched for published and pre-published relevant articles between December 2019 and 8 June 2020. The data from the selected studies were abstracted and analyzed for efficacy and safety outcomes. Critical appraisal of the evidence was done by Cochrane risk of bias tool and Newcastle Ottawa Scale. The quality of evidence was graded as per the GRADE approach. RESULTS: We reviewed 12 observational and 3 randomized trials which included 10,659 patients of whom 5713 received CQ/HCQ and 4966 received only standard of care. The efficacy of CQ/HCQ for COVID-19 was inconsistent across the studies. Meta-analysis of included studies revealed no significant reduction in mortality with HCQ use [RR 0.98 95% CI 0.66-1.46], time to fever resolution (mean difference - 0.54 days (- 1.19-011)) or clinical deterioration/development of ARDS with HCQ [RR 0.90 95% CI 0.47-1.71]. There was a higher risk of ECG abnormalities/arrhythmia with HCQ/CQ [RR 1.46 95% CI 1.04 to 2.06]. The quality of evidence was graded as very low for these outcomes. AUTHORS' CONCLUSION: The available evidence suggests that CQ or HCQ does not improve clinical outcomes in COVID-19. Well-designed randomized trials are required for assessing the efficacy and safety of HCQ and CQ for COVID-19.
+
+OUTPUT: 
+
+{'Treatment': 1, 'Diagnosis': 0, 'Prevention': 0, 'Mechanism': 0, 'Transmission': 0, 'Epidemic Forecasting': 0, 'Case Report': 0}
+
+***EXAMPLE-4***
+
+INPUT: Comparing the impact of Hydroxychloroquine based regimens and standard treatment on COVID-19 patient outcomes: A retrospective cohort study. Background: Pharmacological treatments including antivirals (Lopinavir/Ritonavir), Immuno-modulatory and anti-inflammatory drugs including, Tocilizumab and Hydroxychloroquine (HCQ) has been widely investigated as a treatment for COVID-19.Despite the ongoing controversies, HCQ was recommended for managing mild to moderate cases in Saudi Arabia . However, to our knowledge, no previous studies have been conducted in Saudi Arabia to assess its effectiveness. Methods: A hospital-based retrospective cohort study involving 161 patients with COVID-19 was conducted from March 1 to May 20, 2020. The study was conducted at Prince Mohammed bin Abdul Aziz Hospital (PMAH).The population included hospitalized adults (age >/= 18 years) with laboratory-confirmed COVID-19. Each eligible patient was followed from the time of admission until the time of discharge. Patients were classified into two groups according to treatment type: in the HCQ group, patients were treated with HCQ; in the SC group, patients were treated with other antiviral or antibacterial treatments according to Ministry of Health (MOH) protocols.The outcomes were hospitalization days, ICU admission, and the need for mechanical ventilation.We estimated the differences in hospital length of stay and time in the ICU between the HCQ group and the standard care (SC) group using a multivariate generalized linear regression. The differences in ICU admission and mechanical ventilation were compared via logistic regression. All models were adjusted for age and gender variables. Results: A total of 161 patients fulfilled the inclusion criteria. Approximately 59% (n = 95) received HCQ-based treatment, and 41% (n = 66) received SC. Length of hospital stay and time in ICU in for patients who received HCQ based treatment was shorter than those who received SC. Similarly, there was less need for ICU admission and mechanical ventilation among patients who received HCQ based treatment compared with SC, (8.6% vs. 10.7 and 3.1% vs. 9.1%). However, the regression analysis showed no significant difference between the two groups in terms of patient outcomes. Conclusion: HCQ had a modest effect on hospital length stay and days in ICU compared with SC. However, these results need to be interpreted with caution. Larger observational studies and RCTs that evaluate the efficacy of HCQ in COVID-19 patients in the Saudi population are urgently needed.
+
+OUTPUT: 
+
+{'Treatment': 1, 'Diagnosis': 0, 'Prevention': 0, 'Mechanism': 0, 'Transmission': 0, 'Epidemic Forecasting': 0, 'Case Report': 0}
+
+***EXAMPLE-5***
+
+INPUT: Effects of hydroxychloroquine treatment on QT interval. BACKGROUND: Hydroxychloroquine (HCQ) has been promoted as a potential treatment of coronavirus disease 2019 (COVID-19), but there are safety concerns. OBJECTIVE: The purpose of this study was to determine the effects of HCQ treatment on QT interval. METHODS: We retrospectively studied the electrocardiograms of 819 patients treated with HCQ for rheumatologic diseases from 2000 to 2020. The primary outcome was corrected QT (QTc) interval, by Bazett formula, during HCQ therapy. RESULTS: Mean patient age was 64.0 +/- 10.9 years, and 734 patients (90%) were men. Median dosage of HCQ was 400 mg daily, and median (25th-75th percentile) duration of HCQ therapy was 1006 (471-2075) days. Mean on-treatment QTc was 430.9 +/- 31.8 ms. In total, 55 patients (7%) had QTc 470-500 ms, and 12 (1.5%) had QTc >500 ms. Chronic kidney disease (CKD), history of atrial fibrillation (AF), and heart failure were independent risk factors for prolonged QTc. In a subset of 591 patients who also had a pretreatment electrocardiogram, mean QTc increased from 424.4 +/- 29.7 ms to 432.0 +/- 32.3 ms (P <.0001) during HCQ treatment. Of these patients, 23 (3.9%) had either prolongation of QTc >15% or on-treatment QTc >500 ms. Over median 5.97 (3.33-10.11) years of follow-up, 269 patients (33%) died. QTc >470 ms during HCQ treatment was associated with a greater mortality risk (hazard ratio 1.78; 95% confidence interval 1.16-2.71; P = .008) in univariable but not in multivariable analysis. CONCLUSION: HCQ is associated with QT prolongation in a significant fraction of patients. The risk of QT prolongation is higher among patients with CKD, AF, and heart failure, who may benefit from greater scrutiny.
+
+OUTPUT: 
+
+{'Treatment': 1, 'Diagnosis': 0, 'Prevention': 0, 'Mechanism': 0, 'Transmission': 0, 'Epidemic Forecasting': 0, 'Case Report': 0}
+
+INPUT: {INPUT}
+
+OUTPUT:

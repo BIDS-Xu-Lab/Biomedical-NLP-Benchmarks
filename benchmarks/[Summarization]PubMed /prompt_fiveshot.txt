@@ -1,0 +1,80 @@
+***TASK***
+the task is to summarize an input biomedical literature in six sentences
+***INPUT***
+the input is a biomedical literature
+***OUTPUT***
+the output is the summary of an input biomedical literature in six sentences
+
+***EXAMPLES***
+***INPUT***
+acute myeloid leukemias ( aml ) , stratified into different risk categories based on cytogenetic and biomolecular analysis , respond differently to therapeutic interventions implemented for curative intent . 
+ overall , most aml patients have complete remission but 40% commonly relapse during the first three years . 
+ it occurs most often in the bone marrow ( bm ) but central nervous system ( cns ) involvement is not rare as its incidence ranges between 2% and 9% . 
+ cns leukemia can present as meningeal leukemia , cranial nerve palsies or cerebral mesenchymal myeloid sarcoma . 
+ peripheral neuropathy may also be a puzzling manifestation as it is a common complaint in clinical practice with a very wide differential diagnosis . 
+ we report the case of an otherwise healthy 69 year - old female patient that presented to our department for a new onset of persistent disabling fatigue and 10% weight loss over two months . 
+ she had no prior medical problems and did not
+***OUTPUT***
+central nervous system ( cns ) relapse is not a rare presentation in acute myeloid leukemia ( aml ) as its incidence ranges between 2% and 9% . 
+ it manifests with meningeal leukemia , cranial nerve palsies or cerebral mesenchymal myeloid sarcoma . 
+ we herein report the case of a 69 year - old female that presented a pseudo - guillain  barr syndrome masking an aml cns relapse . 
+ her symptoms completely resolved upon administration of a tailored treatment . 
+ this case suggests that puzzling neurological manifestations in patients with a history of aml should be considered as a cns recurrence and investigated accordingly even in the context of normal imaging findings .
+
+***INPUT***
+a supernumerary tooth is a development anomaly of number characterized by the presence of tooth in addition to the normal series . 
+ its prevalence rates of reported in the literature vary between 0.1% and 3.6% in the permanent dentition depending on the respective population . 
+ supernumerary teeth can occur as singles , multiples , unilaterally , or bilaterally and in the maxilla , the mandible , or both . according to alberti , 
+ only 25% of all mesiodentes spontaneously erupt into the oral cavity . in general , they remain impacted and asymptomatic ; and are commonly discovered during the routine radiographic examination . 
+ there are several hypotheses which have been proposed to explain the occurrence of supernumerary teeth , and their etiology remains unclear . a combination of environmental and genetic factors has been proposed to explain supernumerary tooth occurrence 
+ . a range of complications varying from crowding to cyst formation can be caused by supernumerary tooth . 
+ several studies have applied cone - beam computed tomography ( cbct ) to accurately diagnose supernumerary teeth with
+***OUTPUT***
+supernumerary teeth are extra teeth or toothlike structures which may have either erupted or unerupted in addition to the 20 deciduous teeth and the 32 permanent teeth . 
+ mesiodens is one of these located in the midline between the two central incisors . 
+ their presence may give rise to a variety of clinical problems . 
+ this paper describes a rare case of palatal placed , inverted and impacted mesiodens associated to two supernumerary teeth which were detected during a radiographic examination for delayed eruption of permanent central incisors in the case of a healthy 8-year - old girl monitored at the oral surgery service while discussing the usefulness of cone beam computed tomography for accurate diagnosis and management .
+
+***INPUT***
+None
+***OUTPUT***
+this paper attempts to clarify the nature of chemical sensitivity by proposing a theory of disease that unites the disparate clinical observations associated with the condition . 
+ sensitivity to chemicals appears to be the consequence of a two - step process : loss of tolerance in susceptible persons following exposure to various toxicants , and subsequent triggering of symptoms by extremely small quantities of previously tolerated chemicals , drugs , foods , and food and drug combinations including caffeine and alcohol . 
+ although chemical sensitivity may be the consequence of this process , a term that may more clearly describe the observed process is toxicant - induced loss of tolerance . 
+ features of this yet - to - be - proven mechanism or theory of disease that affect the design of human exposure studies include the stimulatory and withdrawallike nature ( resembling addiction ) of symptoms reported by patients and masking . masking , which may blunt or eliminate responses to chemical challenges , appears to have several components : apposition , which is the overlapping of the effects of closely timed exposures , acclimatization or habituation , and addiction . 
+ a number of human challenge studies
+
+***INPUT***
+selective laser trabeculoplasty ( slt ) works just as well in iop - lowering as anti - glaucoma medication and argon laser trabeculoplasty ( alt ) but only utilizing 1% of the energy in alt hence making it a safer treatment for open angle glaucoma . while slt is safe and almost free of permanent damages to the trabecular meshwork and cornea , not everyone that is being treated responds . 
+ recently , in a series of 83 eyes , slt was found to be effective in normal tension glaucoma ( ntg ) , lowering the iop by an additional 20% from pre - slt levels with 27% less medication use at 6 months while maintaining a 30% reduction from baseline iop . 
+ much work has been done to identify the factors that predict slt success including : an absence of iop - lowering medication prior to laser and a higher pre - slt iop . 
+ conflicting results have been reported for angle pigmentation , while other factors like diabetes , central corneal
+***OUTPUT***
+abstractto determine the predictors of success for selective laser trabeculoplasty ( slt ) in normal tension glaucoma ( ntg).this prospective cohort study recruited subjects with unilateral or bilateral ntg on medication . 
+ all subjects received a single session of 360 slt treatment . 
+ slt success was defined as iop reduction 20% at 1-month . 
+ the following covariates were analyzed via univariate and multivariate analyses : age ; sex ; lens status ; presenting , pre - slt , and post - slt iop 's ; number and type of medications ; slt shots and energy ; and pre - slt investigations.in 60 eyes of 32 subjects with ntg , there were 30 right eyes and 28 left eyes . 
+ the success rate of slt was 61.7% . using 3 types of anti - glaucoma medications ( coefficient  =  2.2 , or  =  0.1 , 
+ p  =  0.02
+
+***INPUT***
+it is composed of cement and other cementitious materials such as fly ash and slag cement , aggregates     ( e.g. , gravels , crushed rock , and sand ) , water , and chemical admixture . 
+ 200  kg  cm ) , as the aggregates efficiently carry the compressive load . however , it is weak in its resistance to tension . 
+ reinforced concrete is made by adding steel bars , steel fibers , glass fibers , or plastic fibers to concrete , in order to improve its tensile strength . 
+ admixtures are materials that are added to give certain characteristics not obtainable with plain concrete mixes 
+ . they may help speed up or slow down the hydration of concrete and improve durability of concrete and plasticity or workability of fresh concrete . 
+ since many reactions occur in concrete , some reactions are not desirable , especially the alkali - silica reaction ( asr ) . 
+ asr is the neutralization reaction between alkaline cement paste and reactive noncrystalline ( amorphous ) silica , which is found in many common aggregates .
+***OUTPUT***
+a simple flow injection with flame photometric detection has been developed for determination of sodium , potassium , and total alkalies in portland cement , fly ash , admixtures , and water of concrete . a liquid sample or a digest of solid sample 
+ was injected into a water carrier stream which flowed to a flame photometer . a change in emission intensity at a selected wavelength 
+ was recorded as a peak . 
+ an amplifier circuit was fabricated , which helped improve sensitivity of the flame photometer . 
+ calibration graphs in the range of 0.051.0  mg  l1 and 1.020.0  mg  l1 were obtained with a detection limit of 0.02  mg  l1 , for both potassium and sodium determination . 
+ relative standard deviations for 11 replicates of injecting of 10  mg  l1 potassium and sodium solutions were 1.69 and 1.79% , respectively . 
+ sample throughput of 120  h1 was achieved . 
+ the
+
+***INPUT***
+{INPUT}
+***OUTPUT***

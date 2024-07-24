@@ -1,0 +1,55 @@
+TASK: Your task is to answer medical questions with the provided choices. Only output the answer option (A/B/C/D/E) as answer. OUTPUT: Answer each question by providing one of the following options: A, B, C, D, E.
+
+###
+EXAMPLES:
+INPUT: A 35-year-old man and his 9-year-old son are brought to the emergency department following a high-speed motor vehicle collision. The father was the restrained driver. He is conscious. His pulse is 135/min and his blood pressure is 76/55 mm Hg. His hemoglobin concentration is 5.9 g/dL. His son sustained multiple body contusions and loss of consciousness. He remains unresponsive in the emergency department. A focused assessment of the boy with sonography is concerning for multiple organ lacerations and internal bleeding. The physician decides to move the man's son to the operating room for emergency surgical exploration. The father says that he and his son are Jehovah's witnesses and do not want blood transfusions. The physician calls the boy's biological mother who confirms this religious belief. She also asks the physician to wait for her arrival before any other medical decisions are undertaken. Which of the following is the most appropriate next step for the physician?A:Consult hospital ethics committee for medical treatment of the son
+ B:Proceed to surgery on the son without transfusion
+ C:Seek a court order for medical treatment of the son
+ D:Transfuse packed red blood cells to the son but not to father
+ E:Wait for the son's mother before providing further treatment
+ OUTPUT: D
+
+INPUT: A 51-year-old woman comes to the emergency department because of a 1-day history of severe pain in her left knee. To lose weight, she recently started jogging for 30 minutes a few times per week. She has type 2 diabetes mellitus and hypertension treated with metformin and chlorothiazide. Her sister has rheumatoid arthritis. She is sexually active with two partners and uses condoms inconsistently. On examination, her temperature is 38.5°C (101.3°F), pulse is 88/min, and blood pressure is 138/87 mm Hg. The left knee is swollen and tender to palpation with a significantly impaired range of motion. A 1.5-cm, painless ulcer is seen on the plantar surface of the left foot. Which of the following is most likely to help establish the diagnosis?A:Perform MRI of the knee
+ B:Perform arthrocentesis
+ C:Measure HLA-B27
+ D:Measure rheumatoid factor
+ E:Perform ultrasonography of the knee
+ OUTPUT: B
+
+INPUT: A 44-year-old man comes to the physician for a follow-up examination. Ten months ago, he was diagnosed with HIV infection and appropriate antiretroviral therapy was initiated. Physical examination shows no abnormalities. Laboratory studies show increased viral load despite ongoing treatment. His pharmacotherapy is switched to a new combination drug regimen including an agent that binds to glycoprotein 41. The expected effect of this drug is most likely due to inhibition of which of the following?A:Viral particle assembly
+ B:Viral docking and attachment to host cells
+ C:Viral genome transcription
+ D:Viral genome integration into host cells
+ E:Viral fusion and entry into host cells
+ OUTPUT: E
+
+INPUT: A 24-year-old woman with 45,X syndrome comes to the physician because of diarrhea for 4 months. She also reports bloating, nausea, and abdominal discomfort that persists after defecation. For the past 6 months, she has felt tired and has been unable to do her normal chores. She went on a backpacking trip across Southeast Asia around 7 months ago. She is 144 cm (4 ft 9 in) tall and weighs 40 kg (88 lb); BMI is 19 kg/m2. Her blood pressure is 110/60 mm Hg in the upper extremities and 80/40 mm Hg in the lower extremities. Examination shows pale conjunctivae and angular stomatitis. Abdominal examination is normal. Laboratory studies show:
+Hemoglobin 9.1 mg/dL
+Leukocyte count 5100/mm3
+Platelet count 200,000/mm3
+Mean corpuscular volume 67 μmm3
+Serum
+Na+ 136 mEq/L
+K+ 3.7 mEq/L
+Cl- 105 mEq/L
+Glucose 89 mg/dL
+Creatinine 1.4 mg/dL
+Ferritin 10 ng/mL
+IgA tissue transglutaminase antibody positive
+Based on the laboratory studies, a biopsy for confirmation of the diagnosis is suggested, but the patient is unwilling to undergo the procedure. Which of the following is the most appropriate next step in management of this patient's gastrointestinal symptoms?"A:Metronidazole therapy
+ B:Avoid milk products
+ C:Intravenous immunoglobulin therapy
+ D:Gluten-free diet
+ E:Trimethoprim-sulfamethaxazole therapy
+ OUTPUT: D
+
+INPUT: A 32-year-old woman is brought to the emergency department by her husband because of an episode of hematemesis 2 hours ago. She has had dyspepsia for 2 years. Her medications include occasional ibuprofen for headaches. After initial stabilization, the risks and benefits of upper endoscopy and alternative treatments, including no therapy, are explained thoroughly. She shows a good understanding of her condition and an appreciation of endoscopic treatment and its complications. She decides that she wants to have an endoscopy to find the source of bleeding and appropriately manage the ulcer. Her medical records show advance directives that she signed 3 years ago; her sister, who is a nurse, has a durable power of attorney. Regarding obtaining informed consent, which of the following is the most accurate conclusion for providing endoscopic treatment for this patient?A:Documentation of her decision prior to treatment is required
+ B:Endoscopic treatment may be performed without further action
+ C:Her decision to have an endoscopy is not voluntary
+ D:Her sister must sign the consent form
+ E:There are reasons to believe that she may not have decision-making capacity
+ OUTPUT: A
+
+###
+INPUT: {INPUT}
+OUTPUT:

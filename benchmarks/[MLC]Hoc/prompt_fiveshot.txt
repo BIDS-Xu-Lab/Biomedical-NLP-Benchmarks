@@ -1,0 +1,110 @@
+﻿***TASK***
+
+The task is to perform a semantic classification of the article according to the hallmarks of cancer based on its abstract.
+
+***INPUT***
+
+The input is an abstract text.
+
+***DOCUMENTATION***
+
+There are 10 cancer hallmarks you will need to decide whether the article is related to, including:
+
+activating invasion and metastasis
+
+sustaining proliferative signaling
+
+resisting cell death
+
+cellular energetics
+
+genomic instability and mutation
+
+evading growth suppressors
+
+inducing angiogenesis
+
+enabling replicative immortality
+
+avoiding immune destruction
+
+tumor promoting inflammation
+
+***OUTPUT***
+
+The output should be in a json format, with relevant value for each class.
+
+Put value 1 if the article is related to that class, 0 if the article is not related to that class. 
+
+Please note one article can be related to multiple classes.
+
+Example output:
+
+{
+
+  "activating invasion and metastasis": ,
+
+  "sustaining proliferative signaling": ,
+
+  "resisting cell death": ,
+
+  "cellular energetics": ,
+
+  "genomic instability and mutation": ,
+
+  "evading growth suppressors": ,
+
+  "inducing angiogenesis": ,
+
+  "enabling replicative immortality": ,
+
+  "avoiding immune destruction": ,
+
+  "tumor promoting inflammation": 
+
+}
+
+***EXAMPLE-1***
+
+INPUT: Cellular senescence is considered as a tumor suppressive mechanism . Recent evidence indicates however that senescent cells secrete various growth factors and cytokines , some of which may paradoxically promote cancer progression . This phenomenon termed senescence-associated secretory phenotype ( SASP ) must be inhibited in order for anti-proliferative agents to be effective . The present study was designed to determine whether the Î²-catenin destruction complex ( BCDC ) , known to integrate the action of various growth factors and cytokines , would represent a suitable target to inhibit the activity of SASP components . For this , we carried out experiments to determine the effect of drug-induced senescence on secretion of SASP , Î²-catenin transactivation , and the relationship between these processes . Moreover , genetic and pharmacological approaches were used to define the implication of BCDC in mediating the effects of SASP components on cell migration and resistance to drugs . The findings indicate that drug-induced senescence was associated with expression of various Wnt ligands in addition to previously known SASP components . Beta catenin transactivation and expression of genes implicated in epithelial-mesenchymal transition ( EMT ) also increased in response to drug-induced SASP . These effects were prevented by Pyrvinium , a recently described activator of BCDC . Pyrvinium also suppressed the effects of SASP on cell migration and resistance to doxorubicin . Together , these findings provide insights on the potential role of BCDC in mediating the effects of drug-induced SASP on cancer cell invasion and resistance to therapy , and suggest that targeting this pathway may represent an effective approach to enhance the activity of current and prospective anti-cancer therapeutics .
+
+OUTPUT: 
+
+{'activating invasion and metastasis': 1, 'sustaining proliferative signaling': 0, 'resisting cell death': 0, 'cellular energetics': 0, 'genomic instability and mutation': 0, 'evading growth suppressors': 0, 'inducing angiogenesis': 0, 'enabling replicative immortality': 1, 'avoiding immune destruction': 0, 'tumor promoting inflammation': 0}
+
+***EXAMPLE-2***
+
+INPUT: Ovarian cancer-related angiogenesis is a complex process orchestrated by many positive and negative regulators . Many growth factors are involved in the development of the tumor-associated vasculature , and from these , endocrine gland-derived vascular endothelial growth factor ( EG-VEGF ) seems to play a crucial role . EG-VEGF is the first organ-specific angiogenic factor and its effects are restricted to the endothelial cells of the endocrine glands . Although EG-VEGF was detected in both normal and neoplastic ovaries , its clinical significance remains controversial . In the present study , we analyzed 30 patients with epithelial ovarian cancer , and the immunohistochemical expression of EG-VEGF was compared with the conventional clinico-pathological parameters of prognosis . Neoplastic cells of the ovarian carcinoma expressed EG-VEGF in 73.33% of the cases , as a cytoplasmic granular product of reaction . We found a strong correlation between the expression of EG-VEGF at protein level and tumor stage , grade , and microscopic type . The expression of EG-VEGF was found in patients with stage III and IV , but not in stage II . The majority of serous adenocarcinoma , half of the cases with clear cell carcinoma and two cases with endometrioid carcinoma showed definite expression in tumor cells . No positive reaction was found in the cases with mucinous carcinoma . Our results showed that EG-VEGF expression is an indicator not only of the advanced stage , but also of ovarian cancer progression . Based on these data , we concluded that EG-VEGF expression in tumor cells of the epithelial ovarian cancer is a good marker of unfavorable prognosis and could be an attractive therapeutic target in patients with advanced-stage tumors , refractory conventional chemotherapy .
+
+OUTPUT: 
+
+{'activating invasion and metastasis': 0, 'sustaining proliferative signaling': 0, 'resisting cell death': 0, 'cellular energetics': 0, 'genomic instability and mutation': 0, 'evading growth suppressors': 0, 'inducing angiogenesis': 1, 'enabling replicative immortality': 0, 'avoiding immune destruction': 0, 'tumor promoting inflammation': 0}
+
+***EXAMPLE-3***
+
+INPUT: Epidermal growth factor receptor-tyrosine kinase inhibitors ( EGFR-TKIs ) show dramatic antitumor activity in a subset of patients with non-small cell lung cancer who have an active mutation in the epidermal growth factor receptor ( EGFR ) gene . On the other hand , some lung cancer patients with wild type EGFR also respond to EGFR-TKIs , suggesting that EGFR-TKIs have an effect on host cells as well as tumor cells . However , the effect of EGFR-TKIs on host microenvironments is largely unknown . A multiple organ metastasis model was previously established in natural killer cell-depleted severe combined immunodeficient mice using human lung cancer cells . This model was used to investigate the therapeutic efficacy of erlotinib , an EGFR-TKI , on multiple organ metastases induced by human small cell lung cancer cells ( SBC-5 cells ) that did not express EGFR . Although erlotinib did not have any effect on the proliferation of SBC-5 cells in vitro , it significantly suppressed bone and lung metastases in vivo , but not liver metastases . An immunohistochemical analysis revealed that , erlotinib significantly suppressed the number of osteoclasts in bone metastases , whereas no difference was seen in microvessel density . Moreover , erlotinib inhibited EGF-induced receptor activator of nuclear factor kappa-B expression in an osteoblastic cell line ( MC3T3-E1 cells ) . These results strongly suggested that erlotinib prevented bone metastases by affecting host microenvironments irrespective of its direct effect on tumor cells .
+
+OUTPUT: 
+
+{'activating invasion and metastasis': 1, 'sustaining proliferative signaling': 1, 'resisting cell death': 0, 'cellular energetics': 0, 'genomic instability and mutation': 0, 'evading growth suppressors': 0, 'inducing angiogenesis': 1, 'enabling replicative immortality': 0, 'avoiding immune destruction': 0, 'tumor promoting inflammation': 0}
+
+***EXAMPLE-4***
+
+INPUT: BACKGROUND Ovarian surface epithelial cells undergo several rounds of division to repair the wound created by follicular rupture at the time of ovulation . This cyclical requirement for cell division , when not interrupted by the long anovulatory rest periods that occur during pregnancy and lactation , may contribute to the development of ovarian cancer . PURPOSE AND METHODS To test this hypothesis , we isolated rat ovarian surface epithelial cells from 10 adult female Fisher rats , initiated two mixed-population and seven clonal cell lines , and repeatedly subcultured these cells in vitro for more than 20 passages . We then tested them for the acquisition of the following four features associated with transformation : 1 ) the loss of contact inhibition , 2 ) the capacity for substrate-independent growth , 3 ) the ability to form tumors when injected subcutaneously and/or intraperitoneally into athymic mice , and 4 ) cytogenetic abnormalities . RESULTS Loss of contact inhibition was observed in all nine late-passage cell lines . Six of the nine late-passage , but none of the early-passage , cell lines tested exhibited a capacity for substrate-independent growth that was augmented in a dose-dependent manner by epidermal growth factor . Two late-passage cell lines ( clone 2 and mixed-population 2 ) generated tumors in athymic BALB/c mice within 3 weeks following subcutaneous injection of 5 x 10(6) cells , whereas similar numbers of early-passage cells from the same cell lines failed to generate palpable tumors . Late-passage clone 7 cells were tumorigenic when 5 x 10(7) cells were injected intraperitoneally . Two of the cell lines analyzed exhibited alterations involving losses of part or all of one member of the chromosome 5 pair . Clone 2 possessed an interstitial deletion , del(5)(q21.3q24) , consistent with the loss of an uncloned putative tumor suppressor gene at 5q22q23 previously reported to reside near the loci for the interferon alpha , interferon beta , and c-jun genes . Early-passage clone 7 cells exhibited chromosome 5 monosomy , while late-passage cells contained one normal chromosome 5 and a derivative ( 5q12q ) . Southern analysis of the three cell lines revealed no consistent loss of loci for the interferon and c-jun genes , although early-passage clone 7 cells had one half the gene copy number for the interferon beta and c-jun genes and both early- and late-passage clone 7 cells lacked DNA sequences hybridizing with the probe for interferon alpha . CONCLUSION This pattern of passage-dependent spontaneous transformation of rat ovarian surface epithelial cells in vitro supports the hypothesis that repetitious ovulation contributes to the etiology of human ovarian cancer .
+
+OUTPUT: 
+
+{'activating invasion and metastasis': 0, 'sustaining proliferative signaling': 1, 'resisting cell death': 0, 'cellular energetics': 0, 'genomic instability and mutation': 0, 'evading growth suppressors': 1, 'inducing angiogenesis': 0, 'enabling replicative immortality': 0, 'avoiding immune destruction': 0, 'tumor promoting inflammation': 0}
+
+***EXAMPLE-5***
+
+INPUT: Breast cancer incidence is increased in women receiving menopausal hormone therapy with estrogen plus progestin but not with estrogen alone . The use of a tissue-selective estrogen complex ( TSEC ) has been proposed as a novel menopausal hormone therapy strategy to eliminate the requirement for a progestogen . Combination of bazedoxifene ( BZA ) with conjugated estrogens ( CEs ) , the first TSEC , has shown beneficial effects . Whether it would exert antiestrogenic effects on breast cancer is not clear . To address this issue , we compared estradiol ( E(2) ) and CE alone on proliferation and apoptosis in MCF-7 breast cancer cells . CE stimulated growth of MCF-7 cells at a peak concentration 10-fold higher than required for E(2) . Both CE and E(2) alone increased DNA synthesis and reduced apoptosis with activation of MAPK , Akt , and p70S6K and up-regulation of antiapoptotic factors survivin , Bcl-2 , and X-linked inhibitor of apoptosis protein , These effects could be completely blocked by BZA . Gene expression studies demonstrated that CE and E(2) were equally potent on expression of cMyc , pS2 , and WNT1 inducible signaling pathway protein 2 , whereas the stimulatory effects of CE on progesterone receptor and amphiregulin expression were weaker than E(2) . BZA effectively blocked each of these effects and showed no estrogen agonistic effects when used alone . Our results indicate that the stimulatory effects of E(2) or CE on breast cancer cells could be completely abrogated by BZA . These studies imply that the CE/BZA , TSEC , exerts antiestrogenic effects on breast cancer cells and might block the growth of occult breast neoplasms in postmenopausal women , resulting in an overall reduction in tumor incidence .
+
+OUTPUT: 
+
+{'activating invasion and metastasis': 0, 'sustaining proliferative signaling': 1, 'resisting cell death': 1, 'cellular energetics': 0, 'genomic instability and mutation': 0, 'evading growth suppressors': 0, 'inducing angiogenesis': 0, 'enabling replicative immortality': 0, 'avoiding immune destruction': 0, 'tumor promoting inflammation': 0}
+
+INPUT: {INPUT}
+
+OUTPUT: 
+
