@@ -1,8 +1,9 @@
-TASK: the task is to extract disease entities in a sentence. 
+TASK: the task is to extract disease entities in a sentence.
 
 INPUT: the input is a sentence.
 
-OUTPUT: the output is an HTML that highlights all the disease entities in the sentence.
+OUTPUT: the output is an HTML that highlights all the disease entities with <span> ... </span> in the sentence.
 
-Input: {Input}
-Output:
+Sentence: {Input}
+
+HTML: 

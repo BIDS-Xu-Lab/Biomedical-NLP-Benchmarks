@@ -1,0 +1,30 @@
+TASK: the task is to extract disease entities in a sentence.
+
+INPUT: the input is a sentence.
+
+OUTPUT: the output is an HTML that highlights all the disease entities with <span> ... </span> in the sentence.
+
+The following example format is provided:
+
+Example-1 Sentence: Mutations at the ataxia - telangiectasia locus and clinical phenotypes of A - T patients .
+
+HTML: Mutations at the <span> ataxia - telangiectasia </span> <span> locus and clinical phenotypes of <span> A - T </span> <span> patients .
+
+Example-2 Sentence: Splicing defects in the ataxia - telangiectasia gene , ATM : underlying mutations and consequences .
+
+HTML: Splicing defects in the <span> ataxia - telangiectasia </span> <span> gene , ATM : underlying mutations and consequences .
+
+Example-3 Sentence: Cytogenetic investigations in families with ataxia - telangiectasia .
+
+HTML: Cytogenetic investigations in families with <span> ataxia - telangiectasia </span> <span> .
+
+Example-4 Sentence: Malignant neoplasms in the families of patients with ataxia - telangiectasia .
+
+HTML: <span> Malignant neoplasms </span> <span> in the families of patients with <span> ataxia - telangiectasia </span> <span> .
+
+Example-5 Sentence: Mutations at the ataxia - telangiectasia ( A - T ) locus on chromosome band 11q22 cause a distinctive autosomal recessive syndrome in homozygotes and predispose heterozygotes to cancer , ischemic heart disease , and early mortality .
+
+HTML: Mutations at the <span> ataxia - telangiectasia </span> <span> ( <span> A - T </span> <span> ) locus on chromosome band 11q22 cause a distinctive <span> autosomal recessive syndrome </span> <span> in homozygotes and predispose heterozygotes to <span> cancer </span> <span> , <span> ischemic heart disease </span> <span> , and early mortality .
+
+Sentence: {Input}
+HTML: 
