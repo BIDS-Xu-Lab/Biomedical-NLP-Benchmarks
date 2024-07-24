@@ -30,7 +30,8 @@ The `example input and output` are from an instance from the training set. `{Inp
 ### 1.3 Preprocessed dataset for instruction fine-tuning
 We also provide the preprocessed datasets for instruction fine-tuning via [here](https://huggingface.co/collections/clinicalnlplab/instruction-datasets-for-benchmark-66a1234b13bb4260ed8f278a).
 
- 
+| Dataset|Train/Dev|Test|
+|-------------|-----|-----|
 | [MLC]HoC                 | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/HoC_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/HoC_test)|
 | [MLC]LitCovid            | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/LitCovid_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/LitCovid_test)|
 | [QA]MedQA(5-option)      | [Train/Dev](https://huggingface.co/datasets/clinicalnlplab/MedQA_train)|[Test](https://huggingface.co/datasets/clinicalnlplab/medQA_test)|
