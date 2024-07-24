@@ -151,4 +151,7 @@ python run_eval.py \
 Additional results are under [Supplementary_Materials](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/tree/main/supplementary_materials).
 
 ## 6. Citation
-Chen, Q., Du, J., Hu, Y., Keloth, V.K., Peng, X., Raja, K., Zhang, R., Lu, Z. and Xu, H., 2023. Large language models in biomedical natural language processing: benchmarks, baselines, and recommendations. arXiv preprint arXiv:2305.16326.
+
+If you use our work, please cite:
+
+Chen, Q., Du, J., Hu, Y., Keloth, V.K., Peng, X., Raja, K., Zhang, R., Lu, Z. and Xu, H., 2023. [Large language models in biomedical natural language processing: benchmarks, baselines, and recommendations](https://arxiv.org/pdf/2305.16326). arXiv preprint arXiv:2305.16326.
