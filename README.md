@@ -55,7 +55,7 @@ We also made the instruction fine-tuned models in the study publicly available v
 | [MLC]LitCovid            | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-LitCovid)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13b-LitCovid)|
 | [QA]MedQA(5-option)      | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-MedQA)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-MedQA)|
 | [QA]PubMedQA             | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-PubmedQA)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-PubmedQA)|
-| [Summarization]PubMed    | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-LLaMA-2-13b-hf-PubmedSumm)||[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-PubmedSumm)|
+| [Summarization]PubMed    | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-LLaMA-2-13b-hf-PubmedSumm)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-PubmedSumm)|
 | [Summarization]MS^2      | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-MS2)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-MS2)|
 | [Simplification]Cochrane | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-CochranePLS)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-13B-CochranePLS)|
 | [Simplification]PLOS     | [LLAMA 2 13B](https://huggingface.co/clinicalnlplab/finetuned-Llama-2-13b-hf-PLOS)|[PMC-LLAMA 13B](https://huggingface.co/clinicalnlplab/finetuned-PMCLLaMA-PLOS)|
