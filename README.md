@@ -115,7 +115,7 @@ The models arguement could be set to any huggingface-based LLaMA models.
 
 ## 4. Evaluation
 
-Please use [run_eval.py] (https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/blob/main/run_eval.py) for evaluation.
+Please use [run_eval.py](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmarks/blob/main/run_eval.py) for evaluation.
 
 Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) (for BART metrics evaluation).
 
