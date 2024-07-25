@@ -1,0 +1,56 @@
+Model 1,Model 2,Model 1 Mean,Model 1 Std Error,Model 1 Confidence Interval,Model 2 Mean,Model 2 Std Error,Model 2 Confidence Interval,p-value
+LitCovid_gpt3.5_zs,LitCovid_gpt3.5_os,0.5625,0.0686,[0.4201 0.6733],0.5609,0.0693,[0.4227 0.6797],0.866
+LitCovid_gpt3.5_zs,LitCovid_gpt3.5_5s,0.5625,0.0686,[0.4201 0.6733],0.5816,0.0582,[0.4678 0.6728],0.0498
+LitCovid_gpt3.5_zs,LitCovid_gpt4_zs,0.5625,0.0686,[0.4201 0.6733],0.5533,0.0681,[0.4265 0.6817],0.219
+LitCovid_gpt3.5_zs,LitCovid_gpt4_os,0.5625,0.0686,[0.4201 0.6733],0.5545,0.0691,[0.4318 0.6899],0.365
+LitCovid_gpt3.5_zs,LitCovid_gpt4_5s,0.5625,0.0686,[0.4201 0.6733],0.5764,0.0646,[0.4554 0.6928],0.256
+LitCovid_gpt3.5_zs,LitCovid_llama2-13b_finetuned,0.5625,0.0686,[0.4201 0.6733],0.5201,0.0769,[0.4006 0.669 ],6.95e-05
+LitCovid_gpt3.5_zs,LitCovid_llama2-13b-chat_zs,0.5625,0.0686,[0.4201 0.6733],0.3717,0.0298,[0.3164 0.4257],3.68e-33
+LitCovid_gpt3.5_zs,LitCovid_llama2-13b-chat_os,0.5625,0.0686,[0.4201 0.6733],0.4605,0.0669,[0.3321 0.5995],8.27e-18
+LitCovid_gpt3.5_zs,LitCovid_llama2-13b-chat_5s,0.5625,0.0686,[0.4201 0.6733],0.3088,0.0584,[0.2054 0.4281],1.03e-33
+LitCovid_gpt3.5_zs,LitCovid_pmcllama-13b_finetuned,0.5625,0.0686,[0.4201 0.6733],0.4139,0.0455,[0.3497 0.5124],1.1199999999999999e-28
+LitCovid_gpt3.5_os,LitCovid_gpt3.5_5s,0.5609,0.0693,[0.4227 0.6797],0.5816,0.0582,[0.4678 0.6728],0.0313
+LitCovid_gpt3.5_os,LitCovid_gpt4_zs,0.5609,0.0693,[0.4227 0.6797],0.5533,0.0681,[0.4265 0.6817],0.326
+LitCovid_gpt3.5_os,LitCovid_gpt4_os,0.5609,0.0693,[0.4227 0.6797],0.5545,0.0691,[0.4318 0.6899],0.447
+LitCovid_gpt3.5_os,LitCovid_gpt4_5s,0.5609,0.0693,[0.4227 0.6797],0.5764,0.0646,[0.4554 0.6928],0.157
+LitCovid_gpt3.5_os,LitCovid_llama2-13b_finetuned,0.5609,0.0693,[0.4227 0.6797],0.5201,0.0769,[0.4006 0.669 ],0.000129
+LitCovid_gpt3.5_os,LitCovid_llama2-13b-chat_zs,0.5609,0.0693,[0.4227 0.6797],0.3717,0.0298,[0.3164 0.4257],1.56e-33
+LitCovid_gpt3.5_os,LitCovid_llama2-13b-chat_os,0.5609,0.0693,[0.4227 0.6797],0.4605,0.0669,[0.3321 0.5995],2.19e-17
+LitCovid_gpt3.5_os,LitCovid_llama2-13b-chat_5s,0.5609,0.0693,[0.4227 0.6797],0.3088,0.0584,[0.2054 0.4281],7.419999999999999e-34
+LitCovid_gpt3.5_os,LitCovid_pmcllama-13b_finetuned,0.5609,0.0693,[0.4227 0.6797],0.4139,0.0455,[0.3497 0.5124],1.03e-28
+LitCovid_gpt3.5_5s,LitCovid_gpt4_zs,0.5816,0.0582,[0.4678 0.6728],0.5533,0.0681,[0.4265 0.6817],0.00165
+LitCovid_gpt3.5_5s,LitCovid_gpt4_os,0.5816,0.0582,[0.4678 0.6728],0.5545,0.0691,[0.4318 0.6899],0.00382
+LitCovid_gpt3.5_5s,LitCovid_gpt4_5s,0.5816,0.0582,[0.4678 0.6728],0.5764,0.0646,[0.4554 0.6928],0.477
+LitCovid_gpt3.5_5s,LitCovid_llama2-13b_finetuned,0.5816,0.0582,[0.4678 0.6728],0.5201,0.0769,[0.4006 0.669 ],7.98e-09
+LitCovid_gpt3.5_5s,LitCovid_llama2-13b-chat_zs,0.5816,0.0582,[0.4678 0.6728],0.3717,0.0298,[0.3164 0.4257],2.6799999999999997e-34
+LitCovid_gpt3.5_5s,LitCovid_llama2-13b-chat_os,0.5816,0.0582,[0.4678 0.6728],0.4605,0.0669,[0.3321 0.5995],4.91e-23
+LitCovid_gpt3.5_5s,LitCovid_llama2-13b-chat_5s,0.5816,0.0582,[0.4678 0.6728],0.3088,0.0584,[0.2054 0.4281],3.5099999999999997e-34
+LitCovid_gpt3.5_5s,LitCovid_pmcllama-13b_finetuned,0.5816,0.0582,[0.4678 0.6728],0.4139,0.0455,[0.3497 0.5124],5.43e-32
+LitCovid_gpt4_zs,LitCovid_gpt4_os,0.5533,0.0681,[0.4265 0.6817],0.5545,0.0691,[0.4318 0.6899],0.858
+LitCovid_gpt4_zs,LitCovid_gpt4_5s,0.5533,0.0681,[0.4265 0.6817],0.5764,0.0646,[0.4554 0.6928],0.0154
+LitCovid_gpt4_zs,LitCovid_llama2-13b_finetuned,0.5533,0.0681,[0.4265 0.6817],0.5201,0.0769,[0.4006 0.669 ],0.00229
+LitCovid_gpt4_zs,LitCovid_llama2-13b-chat_zs,0.5533,0.0681,[0.4265 0.6817],0.3717,0.0298,[0.3164 0.4257],8.36e-34
+LitCovid_gpt4_zs,LitCovid_llama2-13b-chat_os,0.5533,0.0681,[0.4265 0.6817],0.4605,0.0669,[0.3321 0.5995],4.59e-16
+LitCovid_gpt4_zs,LitCovid_llama2-13b-chat_5s,0.5533,0.0681,[0.4265 0.6817],0.3088,0.0584,[0.2054 0.4281],7.199999999999999e-34
+LitCovid_gpt4_zs,LitCovid_pmcllama-13b_finetuned,0.5533,0.0681,[0.4265 0.6817],0.4139,0.0455,[0.3497 0.5124],1.47e-28
+LitCovid_gpt4_os,LitCovid_gpt4_5s,0.5545,0.0691,[0.4318 0.6899],0.5764,0.0646,[0.4554 0.6928],0.0254
+LitCovid_gpt4_os,LitCovid_llama2-13b_finetuned,0.5545,0.0691,[0.4318 0.6899],0.5201,0.0769,[0.4006 0.669 ],0.00168
+LitCovid_gpt4_os,LitCovid_llama2-13b-chat_zs,0.5545,0.0691,[0.4318 0.6899],0.3717,0.0298,[0.3164 0.4257],1.19e-33
+LitCovid_gpt4_os,LitCovid_llama2-13b-chat_os,0.5545,0.0691,[0.4318 0.6899],0.4605,0.0669,[0.3321 0.5995],8.55e-16
+LitCovid_gpt4_os,LitCovid_llama2-13b-chat_5s,0.5545,0.0691,[0.4318 0.6899],0.3088,0.0584,[0.2054 0.4281],8.36e-34
+LitCovid_gpt4_os,LitCovid_pmcllama-13b_finetuned,0.5545,0.0691,[0.4318 0.6899],0.4139,0.0455,[0.3497 0.5124],4.25e-28
+LitCovid_gpt4_5s,LitCovid_llama2-13b_finetuned,0.5764,0.0646,[0.4554 0.6928],0.5201,0.0769,[0.4006 0.669 ],2.63e-07
+LitCovid_gpt4_5s,LitCovid_llama2-13b-chat_zs,0.5764,0.0646,[0.4554 0.6928],0.3717,0.0298,[0.3164 0.4257],2.6799999999999997e-34
+LitCovid_gpt4_5s,LitCovid_llama2-13b-chat_os,0.5764,0.0646,[0.4554 0.6928],0.4605,0.0669,[0.3321 0.5995],1.1700000000000001e-21
+LitCovid_gpt4_5s,LitCovid_llama2-13b-chat_5s,0.5764,0.0646,[0.4554 0.6928],0.3088,0.0584,[0.2054 0.4281],3.5099999999999997e-34
+LitCovid_gpt4_5s,LitCovid_pmcllama-13b_finetuned,0.5764,0.0646,[0.4554 0.6928],0.4139,0.0455,[0.3497 0.5124],2.1e-31
+LitCovid_llama2-13b_finetuned,LitCovid_llama2-13b-chat_zs,0.5201,0.0769,[0.4006 0.669 ],0.3717,0.0298,[0.3164 0.4257],5.7200000000000005e-31
+LitCovid_llama2-13b_finetuned,LitCovid_llama2-13b-chat_os,0.5201,0.0769,[0.4006 0.669 ],0.4605,0.0669,[0.3321 0.5995],6.85e-08
+LitCovid_llama2-13b_finetuned,LitCovid_llama2-13b-chat_5s,0.5201,0.0769,[0.4006 0.669 ],0.3088,0.0584,[0.2054 0.4281],2.2700000000000003e-32
+LitCovid_llama2-13b_finetuned,LitCovid_pmcllama-13b_finetuned,0.5201,0.0769,[0.4006 0.669 ],0.4139,0.0455,[0.3497 0.5124],2.92e-21
+LitCovid_llama2-13b-chat_zs,LitCovid_llama2-13b-chat_os,0.3717,0.0298,[0.3164 0.4257],0.4605,0.0669,[0.3321 0.5995],1.41e-21
+LitCovid_llama2-13b-chat_zs,LitCovid_llama2-13b-chat_5s,0.3717,0.0298,[0.3164 0.4257],0.3088,0.0584,[0.2054 0.4281],8.05e-16
+LitCovid_llama2-13b-chat_zs,LitCovid_pmcllama-13b_finetuned,0.3717,0.0298,[0.3164 0.4257],0.4139,0.0455,[0.3497 0.5124],1.74e-11
+LitCovid_llama2-13b-chat_os,LitCovid_llama2-13b-chat_5s,0.4605,0.0669,[0.3321 0.5995],0.3088,0.0584,[0.2054 0.4281],1.3199999999999999e-28
+LitCovid_llama2-13b-chat_os,LitCovid_pmcllama-13b_finetuned,0.4605,0.0669,[0.3321 0.5995],0.4139,0.0455,[0.3497 0.5124],7.85e-08
+LitCovid_llama2-13b-chat_5s,LitCovid_pmcllama-13b_finetuned,0.3088,0.0584,[0.2054 0.4281],0.4139,0.0455,[0.3497 0.5124],2.65e-24

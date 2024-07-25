@@ -1,0 +1,56 @@
+Model 1,Model 2,Model 1 Mean,Model 1 Std Error,Model 1 Confidence Interval,Model 2 Mean,Model 2 Std Error,Model 2 Confidence Interval,p-value
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_gpt3.5_os,0.4147,0.0836,[0.2621 0.5673],0.4823,0.0841,[0.3199 0.6379],1.54e-07
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_gpt3.5_5s,0.4147,0.0836,[0.2621 0.5673],0.4423,0.0842,[0.2831 0.6131],0.0243
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_gpt4_zs,0.4147,0.0836,[0.2621 0.5673],0.5773,0.106,[0.3642 0.742 ],1.88e-20
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_gpt4_os,0.4147,0.0836,[0.2621 0.5673],0.6098,0.1014,[0.4035 0.7767],2.47e-25
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_gpt4_5s,0.4147,0.0836,[0.2621 0.5673],0.648,0.0872,[0.4755 0.821 ],1.27e-30
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_llama2-13b_finetuned,0.4147,0.0836,[0.2621 0.5673],0.8573,0.0568,[0.7138 0.9578],2.5199999999999998e-34
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_llama2-13b-chat_zs,0.4147,0.0836,[0.2621 0.5673],0.2212,0.0959,[0.044  0.3967],1.31e-26
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_llama2-13b-chat_os,0.4147,0.0836,[0.2621 0.5673],0.3834,0.0818,[0.2581 0.5415],0.00424
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_llama2-13b-chat_5s,0.4147,0.0836,[0.2621 0.5673],0.4746,0.0761,[0.3145 0.619 ],3.8e-07
+NCBI_Disease_gpt3.5_zs,NCBI_Disease_pmcllama-13b_finetuned,0.4147,0.0836,[0.2621 0.5673],0.8257,0.0659,[0.6881 0.9434],2.6e-34
+NCBI_Disease_gpt3.5_os,NCBI_Disease_gpt3.5_5s,0.4823,0.0841,[0.3199 0.6379],0.4423,0.0842,[0.2831 0.6131],0.00134
+NCBI_Disease_gpt3.5_os,NCBI_Disease_gpt4_zs,0.4823,0.0841,[0.3199 0.6379],0.5773,0.106,[0.3642 0.742 ],1.82e-10
+NCBI_Disease_gpt3.5_os,NCBI_Disease_gpt4_os,0.4823,0.0841,[0.3199 0.6379],0.6098,0.1014,[0.4035 0.7767],9.83e-16
+NCBI_Disease_gpt3.5_os,NCBI_Disease_gpt4_5s,0.4823,0.0841,[0.3199 0.6379],0.648,0.0872,[0.4755 0.821 ],4.54e-24
+NCBI_Disease_gpt3.5_os,NCBI_Disease_llama2-13b_finetuned,0.4823,0.0841,[0.3199 0.6379],0.8573,0.0568,[0.7138 0.9578],2.5199999999999998e-34
+NCBI_Disease_gpt3.5_os,NCBI_Disease_llama2-13b-chat_zs,0.4823,0.0841,[0.3199 0.6379],0.2212,0.0959,[0.044  0.3967],9.960000000000001e-32
+NCBI_Disease_gpt3.5_os,NCBI_Disease_llama2-13b-chat_os,0.4823,0.0841,[0.3199 0.6379],0.3834,0.0818,[0.2581 0.5415],2.12e-13
+NCBI_Disease_gpt3.5_os,NCBI_Disease_llama2-13b-chat_5s,0.4823,0.0841,[0.3199 0.6379],0.4746,0.0761,[0.3145 0.619 ],0.481
+NCBI_Disease_gpt3.5_os,NCBI_Disease_pmcllama-13b_finetuned,0.4823,0.0841,[0.3199 0.6379],0.8257,0.0659,[0.6881 0.9434],2.76e-34
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_gpt4_zs,0.4423,0.0842,[0.2831 0.6131],0.5773,0.106,[0.3642 0.742 ],1.5e-16
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_gpt4_os,0.4423,0.0842,[0.2831 0.6131],0.6098,0.1014,[0.4035 0.7767],1.1700000000000001e-21
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_gpt4_5s,0.4423,0.0842,[0.2831 0.6131],0.648,0.0872,[0.4755 0.821 ],1.56e-28
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_llama2-13b_finetuned,0.4423,0.0842,[0.2831 0.6131],0.8573,0.0568,[0.7138 0.9578],2.5199999999999998e-34
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_llama2-13b-chat_zs,0.4423,0.0842,[0.2831 0.6131],0.2212,0.0959,[0.044  0.3967],3.03e-29
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_llama2-13b-chat_os,0.4423,0.0842,[0.2831 0.6131],0.3834,0.0818,[0.2581 0.5415],1.63e-06
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_llama2-13b-chat_5s,0.4423,0.0842,[0.2831 0.6131],0.4746,0.0761,[0.3145 0.619 ],0.00425
+NCBI_Disease_gpt3.5_5s,NCBI_Disease_pmcllama-13b_finetuned,0.4423,0.0842,[0.2831 0.6131],0.8257,0.0659,[0.6881 0.9434],2.5199999999999998e-34
+NCBI_Disease_gpt4_zs,NCBI_Disease_gpt4_os,0.5773,0.106,[0.3642 0.742 ],0.6098,0.1014,[0.4035 0.7767],0.0492
+NCBI_Disease_gpt4_zs,NCBI_Disease_gpt4_5s,0.5773,0.106,[0.3642 0.742 ],0.648,0.0872,[0.4755 0.821 ],4.9e-06
+NCBI_Disease_gpt4_zs,NCBI_Disease_llama2-13b_finetuned,0.5773,0.106,[0.3642 0.742 ],0.8573,0.0568,[0.7138 0.9578],1.4900000000000001e-33
+NCBI_Disease_gpt4_zs,NCBI_Disease_llama2-13b-chat_zs,0.5773,0.106,[0.3642 0.742 ],0.2212,0.0959,[0.044  0.3967],3.68e-33
+NCBI_Disease_gpt4_zs,NCBI_Disease_llama2-13b-chat_os,0.5773,0.106,[0.3642 0.742 ],0.3834,0.0818,[0.2581 0.5415],2.31e-24
+NCBI_Disease_gpt4_zs,NCBI_Disease_llama2-13b-chat_5s,0.5773,0.106,[0.3642 0.742 ],0.4746,0.0761,[0.3145 0.619 ],2.96e-12
+NCBI_Disease_gpt4_zs,NCBI_Disease_pmcllama-13b_finetuned,0.5773,0.106,[0.3642 0.742 ],0.8257,0.0659,[0.6881 0.9434],3.04e-32
+NCBI_Disease_gpt4_os,NCBI_Disease_gpt4_5s,0.6098,0.1014,[0.4035 0.7767],0.648,0.0872,[0.4755 0.821 ],0.0135
+NCBI_Disease_gpt4_os,NCBI_Disease_llama2-13b_finetuned,0.6098,0.1014,[0.4035 0.7767],0.8573,0.0568,[0.7138 0.9578],3.31e-32
+NCBI_Disease_gpt4_os,NCBI_Disease_llama2-13b-chat_zs,0.6098,0.1014,[0.4035 0.7767],0.2212,0.0959,[0.044  0.3967],6.2e-34
+NCBI_Disease_gpt4_os,NCBI_Disease_llama2-13b-chat_os,0.6098,0.1014,[0.4035 0.7767],0.3834,0.0818,[0.2581 0.5415],2.1e-28
+NCBI_Disease_gpt4_os,NCBI_Disease_llama2-13b-chat_5s,0.6098,0.1014,[0.4035 0.7767],0.4746,0.0761,[0.3145 0.619 ],1.35e-17
+NCBI_Disease_gpt4_os,NCBI_Disease_pmcllama-13b_finetuned,0.6098,0.1014,[0.4035 0.7767],0.8257,0.0659,[0.6881 0.9434],6.57e-30
+NCBI_Disease_gpt4_5s,NCBI_Disease_llama2-13b_finetuned,0.648,0.0872,[0.4755 0.821 ],0.8573,0.0568,[0.7138 0.9578],1.88e-31
+NCBI_Disease_gpt4_5s,NCBI_Disease_llama2-13b-chat_zs,0.648,0.0872,[0.4755 0.821 ],0.2212,0.0959,[0.044  0.3967],3.11e-34
+NCBI_Disease_gpt4_5s,NCBI_Disease_llama2-13b-chat_os,0.648,0.0872,[0.4755 0.821 ],0.3834,0.0818,[0.2581 0.5415],6.090000000000001e-32
+NCBI_Disease_gpt4_5s,NCBI_Disease_llama2-13b-chat_5s,0.648,0.0872,[0.4755 0.821 ],0.4746,0.0761,[0.3145 0.619 ],5.98e-26
+NCBI_Disease_gpt4_5s,NCBI_Disease_pmcllama-13b_finetuned,0.648,0.0872,[0.4755 0.821 ],0.8257,0.0659,[0.6881 0.9434],1.43e-27
+NCBI_Disease_llama2-13b_finetuned,NCBI_Disease_llama2-13b-chat_zs,0.8573,0.0568,[0.7138 0.9578],0.2212,0.0959,[0.044  0.3967],2.5199999999999998e-34
+NCBI_Disease_llama2-13b_finetuned,NCBI_Disease_llama2-13b-chat_os,0.8573,0.0568,[0.7138 0.9578],0.3834,0.0818,[0.2581 0.5415],2.5199999999999998e-34
+NCBI_Disease_llama2-13b_finetuned,NCBI_Disease_llama2-13b-chat_5s,0.8573,0.0568,[0.7138 0.9578],0.4746,0.0761,[0.3145 0.619 ],2.5199999999999998e-34
+NCBI_Disease_llama2-13b_finetuned,NCBI_Disease_pmcllama-13b_finetuned,0.8573,0.0568,[0.7138 0.9578],0.8257,0.0659,[0.6881 0.9434],0.000452
+NCBI_Disease_llama2-13b-chat_zs,NCBI_Disease_llama2-13b-chat_os,0.2212,0.0959,[0.044  0.3967],0.3834,0.0818,[0.2581 0.5415],3.49e-23
+NCBI_Disease_llama2-13b-chat_zs,NCBI_Disease_llama2-13b-chat_5s,0.2212,0.0959,[0.044  0.3967],0.4746,0.0761,[0.3145 0.619 ],1.02e-31
+NCBI_Disease_llama2-13b-chat_zs,NCBI_Disease_pmcllama-13b_finetuned,0.2212,0.0959,[0.044  0.3967],0.8257,0.0659,[0.6881 0.9434],2.5199999999999998e-34
+NCBI_Disease_llama2-13b-chat_os,NCBI_Disease_llama2-13b-chat_5s,0.3834,0.0818,[0.2581 0.5415],0.4746,0.0761,[0.3145 0.619 ],3.75e-13
+NCBI_Disease_llama2-13b-chat_os,NCBI_Disease_pmcllama-13b_finetuned,0.3834,0.0818,[0.2581 0.5415],0.8257,0.0659,[0.6881 0.9434],2.5199999999999998e-34
+NCBI_Disease_llama2-13b-chat_5s,NCBI_Disease_pmcllama-13b_finetuned,0.4746,0.0761,[0.3145 0.619 ],0.8257,0.0659,[0.6881 0.9434],2.76e-34

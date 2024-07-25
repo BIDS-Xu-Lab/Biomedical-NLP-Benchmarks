@@ -1,0 +1,56 @@
+Model 1,Model 2,Model 1 Mean,Model 1 Std Error,Model 1 Confidence Interval,Model 2 Mean,Model 2 Std Error,Model 2 Confidence Interval,p-value
+ChemProt_gpt3.5_zs,ChemProt_gpt3.5_os,0.2127,0.1024,[0.0535 0.407 ],0.2041,0.0962,[0.0605 0.4041],0.624
+ChemProt_gpt3.5_zs,ChemProt_gpt3.5_5s,0.2127,0.1024,[0.0535 0.407 ],0.1965,0.0934,[0.0747 0.3948],0.266
+ChemProt_gpt3.5_zs,ChemProt_gpt4_zs,0.2127,0.1024,[0.0535 0.407 ],0.2864,0.1063,[0.1032 0.4904],3.74e-06
+ChemProt_gpt3.5_zs,ChemProt_gpt4_os,0.2127,0.1024,[0.0535 0.407 ],0.3066,0.1172,[0.1037 0.5241],5.51e-08
+ChemProt_gpt3.5_zs,ChemProt_gpt4_5s,0.2127,0.1024,[0.0535 0.407 ],0.3427,0.1284,[0.1315 0.6191],1.01e-11
+ChemProt_gpt3.5_zs,ChemProt_llama2-13b_finetuned,0.2127,0.1024,[0.0535 0.407 ],0.4264,0.1735,[0.1689 0.8386],2.6e-19
+ChemProt_gpt3.5_zs,ChemProt_llama2-13b-chat_zs,0.2127,0.1024,[0.0535 0.407 ],0.1159,0.0881,[0.013 0.329],2.37e-11
+ChemProt_gpt3.5_zs,ChemProt_llama2-13b-chat_os,0.2127,0.1024,[0.0535 0.407 ],0.0499,0.0601,[0.     0.1901],5.53e-25
+ChemProt_gpt3.5_zs,ChemProt_llama2-13b-chat_5s,0.2127,0.1024,[0.0535 0.407 ],0.0855,0.0685,[0.0139 0.2693],1.08e-18
+ChemProt_gpt3.5_zs,ChemProt_pmcllama-13b_finetuned,0.2127,0.1024,[0.0535 0.407 ],0.3612,0.1555,[0.139  0.6967],8.53e-12
+ChemProt_gpt3.5_os,ChemProt_gpt3.5_5s,0.2041,0.0962,[0.0605 0.4041],0.1965,0.0934,[0.0747 0.3948],0.577
+ChemProt_gpt3.5_os,ChemProt_gpt4_zs,0.2041,0.0962,[0.0605 0.4041],0.2864,0.1063,[0.1032 0.4904],1.55e-07
+ChemProt_gpt3.5_os,ChemProt_gpt4_os,0.2041,0.0962,[0.0605 0.4041],0.3066,0.1172,[0.1037 0.5241],2.33e-09
+ChemProt_gpt3.5_os,ChemProt_gpt4_5s,0.2041,0.0962,[0.0605 0.4041],0.3427,0.1284,[0.1315 0.6191],2.3e-13
+ChemProt_gpt3.5_os,ChemProt_llama2-13b_finetuned,0.2041,0.0962,[0.0605 0.4041],0.4264,0.1735,[0.1689 0.8386],3.52e-21
+ChemProt_gpt3.5_os,ChemProt_llama2-13b-chat_zs,0.2041,0.0962,[0.0605 0.4041],0.1159,0.0881,[0.013 0.329],2.56e-10
+ChemProt_gpt3.5_os,ChemProt_llama2-13b-chat_os,0.2041,0.0962,[0.0605 0.4041],0.0499,0.0601,[0.     0.1901],1.12e-24
+ChemProt_gpt3.5_os,ChemProt_llama2-13b-chat_5s,0.2041,0.0962,[0.0605 0.4041],0.0855,0.0685,[0.0139 0.2693],1.65e-18
+ChemProt_gpt3.5_os,ChemProt_pmcllama-13b_finetuned,0.2041,0.0962,[0.0605 0.4041],0.3612,0.1555,[0.139  0.6967],1.65e-13
+ChemProt_gpt3.5_5s,ChemProt_gpt4_zs,0.1965,0.0934,[0.0747 0.3948],0.2864,0.1063,[0.1032 0.4904],4.86e-09
+ChemProt_gpt3.5_5s,ChemProt_gpt4_os,0.1965,0.0934,[0.0747 0.3948],0.3066,0.1172,[0.1037 0.5241],9.95e-11
+ChemProt_gpt3.5_5s,ChemProt_gpt4_5s,0.1965,0.0934,[0.0747 0.3948],0.3427,0.1284,[0.1315 0.6191],5.87e-15
+ChemProt_gpt3.5_5s,ChemProt_llama2-13b_finetuned,0.1965,0.0934,[0.0747 0.3948],0.4264,0.1735,[0.1689 0.8386],2.87e-22
+ChemProt_gpt3.5_5s,ChemProt_llama2-13b-chat_zs,0.1965,0.0934,[0.0747 0.3948],0.1159,0.0881,[0.013 0.329],1.49e-09
+ChemProt_gpt3.5_5s,ChemProt_llama2-13b-chat_os,0.1965,0.0934,[0.0747 0.3948],0.0499,0.0601,[0.     0.1901],3.12e-24
+ChemProt_gpt3.5_5s,ChemProt_llama2-13b-chat_5s,0.1965,0.0934,[0.0747 0.3948],0.0855,0.0685,[0.0139 0.2693],5.39e-18
+ChemProt_gpt3.5_5s,ChemProt_pmcllama-13b_finetuned,0.1965,0.0934,[0.0747 0.3948],0.3612,0.1555,[0.139  0.6967],8e-15
+ChemProt_gpt4_zs,ChemProt_gpt4_os,0.2864,0.1063,[0.1032 0.4904],0.3066,0.1172,[0.1037 0.5241],0.206
+ChemProt_gpt4_zs,ChemProt_gpt4_5s,0.2864,0.1063,[0.1032 0.4904],0.3427,0.1284,[0.1315 0.6191],0.00339
+ChemProt_gpt4_zs,ChemProt_llama2-13b_finetuned,0.2864,0.1063,[0.1032 0.4904],0.4264,0.1735,[0.1689 0.8386],1.32e-09
+ChemProt_gpt4_zs,ChemProt_llama2-13b-chat_zs,0.2864,0.1063,[0.1032 0.4904],0.1159,0.0881,[0.013 0.329],1.9600000000000003e-21
+ChemProt_gpt4_zs,ChemProt_llama2-13b-chat_os,0.2864,0.1063,[0.1032 0.4904],0.0499,0.0601,[0.     0.1901],3.52e-31
+ChemProt_gpt4_zs,ChemProt_llama2-13b-chat_5s,0.2864,0.1063,[0.1032 0.4904],0.0855,0.0685,[0.0139 0.2693],1.75e-27
+ChemProt_gpt4_zs,ChemProt_pmcllama-13b_finetuned,0.2864,0.1063,[0.1032 0.4904],0.3612,0.1555,[0.139  0.6967],0.00196
+ChemProt_gpt4_os,ChemProt_gpt4_5s,0.3066,0.1172,[0.1037 0.5241],0.3427,0.1284,[0.1315 0.6191],0.0669
+ChemProt_gpt4_os,ChemProt_llama2-13b_finetuned,0.3066,0.1172,[0.1037 0.5241],0.4264,0.1735,[0.1689 0.8386],6.74e-07
+ChemProt_gpt4_os,ChemProt_llama2-13b-chat_zs,0.3066,0.1172,[0.1037 0.5241],0.1159,0.0881,[0.013 0.329],1.09e-22
+ChemProt_gpt4_os,ChemProt_llama2-13b-chat_os,0.3066,0.1172,[0.1037 0.5241],0.0499,0.0601,[0.     0.1901],3.4200000000000002e-31
+ChemProt_gpt4_os,ChemProt_llama2-13b-chat_5s,0.3066,0.1172,[0.1037 0.5241],0.0855,0.0685,[0.0139 0.2693],5.07e-28
+ChemProt_gpt4_os,ChemProt_pmcllama-13b_finetuned,0.3066,0.1172,[0.1037 0.5241],0.3612,0.1555,[0.139  0.6967],0.0376
+ChemProt_gpt4_5s,ChemProt_llama2-13b_finetuned,0.3427,0.1284,[0.1315 0.6191],0.4264,0.1735,[0.1689 0.8386],0.000834
+ChemProt_gpt4_5s,ChemProt_llama2-13b-chat_zs,0.3427,0.1284,[0.1315 0.6191],0.1159,0.0881,[0.013 0.329],1.58e-25
+ChemProt_gpt4_5s,ChemProt_llama2-13b-chat_os,0.3427,0.1284,[0.1315 0.6191],0.0499,0.0601,[0.     0.1901],1.46e-32
+ChemProt_gpt4_5s,ChemProt_llama2-13b-chat_5s,0.3427,0.1284,[0.1315 0.6191],0.0855,0.0685,[0.0139 0.2693],6.67e-30
+ChemProt_gpt4_5s,ChemProt_pmcllama-13b_finetuned,0.3427,0.1284,[0.1315 0.6191],0.3612,0.1555,[0.139  0.6967],0.648
+ChemProt_llama2-13b_finetuned,ChemProt_llama2-13b-chat_zs,0.4264,0.1735,[0.1689 0.8386],0.1159,0.0881,[0.013 0.329],1.5e-29
+ChemProt_llama2-13b_finetuned,ChemProt_llama2-13b-chat_os,0.4264,0.1735,[0.1689 0.8386],0.0499,0.0601,[0.     0.1901],1.4900000000000001e-33
+ChemProt_llama2-13b_finetuned,ChemProt_llama2-13b-chat_5s,0.4264,0.1735,[0.1689 0.8386],0.0855,0.0685,[0.0139 0.2693],2.48e-32
+ChemProt_llama2-13b_finetuned,ChemProt_pmcllama-13b_finetuned,0.4264,0.1735,[0.1689 0.8386],0.3612,0.1555,[0.139  0.6967],0.00668
+ChemProt_llama2-13b-chat_zs,ChemProt_llama2-13b-chat_os,0.1159,0.0881,[0.013 0.329],0.0499,0.0601,[0.     0.1901],1.59e-10
+ChemProt_llama2-13b-chat_zs,ChemProt_llama2-13b-chat_5s,0.1159,0.0881,[0.013 0.329],0.0855,0.0685,[0.0139 0.2693],0.011
+ChemProt_llama2-13b-chat_zs,ChemProt_pmcllama-13b_finetuned,0.1159,0.0881,[0.013 0.329],0.3612,0.1555,[0.139  0.6967],2.2e-25
+ChemProt_llama2-13b-chat_os,ChemProt_llama2-13b-chat_5s,0.0499,0.0601,[0.     0.1901],0.0855,0.0685,[0.0139 0.2693],1.79e-07
+ChemProt_llama2-13b-chat_os,ChemProt_pmcllama-13b_finetuned,0.0499,0.0601,[0.     0.1901],0.3612,0.1555,[0.139  0.6967],1.51e-32
+ChemProt_llama2-13b-chat_5s,ChemProt_pmcllama-13b_finetuned,0.0855,0.0685,[0.0139 0.2693],0.3612,0.1555,[0.139  0.6967],3.6499999999999996e-30
