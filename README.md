@@ -123,14 +123,21 @@ Please use [run_eval.py](https://github.com/BIDS-Xu-Lab/Biomedical-NLP-Benchmark
 
 Before evaluation, please download [BART checkpoint](https://drive.google.com/u/0/uc?id=1_7JfF7KOInb7ZrxKHIigTMR4ChVET01m&export=download) (for BART metrics evaluation).
 
-To evaluate on various datasets or tasks, please use the following command:
+To evaluate on various datasets or tasks, please run the following command:
 ```bash
 python run_eval.py \
  --json_file {ms2_gpt-4-32k_one_shot.json | ms2_llama2_13b_chat_one_shot.json | ...} \
  --format_type {gpt | llama} \ 
- --task {NER | RE | MLC | QA | summarization | simplification}
+ --task {RE | MLC | QA | summarization | simplification}
 ```
 
+To evaluate NER performance, please run the following command:
+```bash
+python run_eval_ner.py \
+ --gold_file {NCBI_Disease_gpt3.5_5s_gold_span.txt | ...} \
+ --pred_file {NCBI_Disease_gpt3.5_5s_pre_span.txt | ...}
+```
+Replace the file names with your own gold standard span file and predicted span file as needed.
 
 ## 5. Results
 
